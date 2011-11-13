@@ -1,0 +1,150 @@
+Happy fun unix time 001
+=======================
+
+Introduction
+------------
+
+These are meant to be a series of exercises to help you explore our environment,
+try out new things, and learn.
+
+At any point if you are uncertain, use google, ask a fellow zombie or a more
+senior cat, or pm finch for help. The goal of this is to learn by whatever
+method that works for you.
+
+If you stumble upon a concept that doesn't make sense or have not heard of, it's
+fine to move past it. There's a lot to learn so don't let small details slow you
+down. Try to absorb as much as you can.
+
+If there is a section that says 'send details to me,' this means I'm actively
+interested in your response and want your feedback or I want to see what you've
+found. If you would be so kind, write up the things you find or work through in
+this and then send me a copy when you're done. This way, I can improve these
+happy fun unix times to make them more happy, fun, unix, and time.
+
+Description
+-----------
+
+This happy fun unix time will show you how to get around a unix system, look
+at files, and run some basic programs.
+
+/cat is the location that cat specific documents, programs, and other
+miscellaneous files are stored. It's been around for a very long time, so there
+are some old relics of times past. We'll explore this to get some real world
+experience.
+
+Commands
+--------
+
+From here on out, you should be doing this from a cat machine. Connect to
+ruby.cat.pdx.edu via putty and work from there.
+
+Before you ride into battle against this happy fun unix time, know your weapons.
+Open the man page for each one of the commands by doing "man command"; for
+instance "man ls" will bring up the man page for ls. Read a bit; man pages can
+be extremely dense, jargon filled, and unclear so if you lose interest, move on.
+Try to read a bit of the description at the least.
+
+  - ls: list files and directories
+    - This command has an obscene amount of flags. Skim through, find one that
+      is interesting/useful/odd/something, and explain it to me.
+  - pwd: print the working directory, or 'where we are'
+  - cat: takes files and prints them out together
+  - less: a 'pager', or program that displays parts of a file at a time
+  - nano: a user friendly editor
+  - file: shows what type a file is, EG a document, music file, or executable binary
+
+cd is a special command; it's called a shell builtin. It isn't a standard
+program but actually a tool that is built into your shell. If you can't find the
+man page for it, you can consult http://ss64.com/bash/cd.html
+
+Your homedir
+------------
+# TODO
+
+The filesystem
+--------------
+# TODO
+
+Running programs
+----------------
+
+Inspecting files
+----------------
+
+/cat/doc
+--------
+
+Commands that you should run will be enclosed in back quotes, like `whoami`.
+Parts of the command that you should change will be enclosed in brackets, so `id
+[your account]` would be `id finch` for finch.
+
+Start off by doing `cd /cat/doc`. Do `ls` here. This is where we store general
+documents like signs and forms.
+
+Do `cd /cat/doc/meetings`. Do `ls` to see all the current agendas.
+
+Print out the dog agenda with `cat agenda.dog`. This might take a while.
+
+Do `pwd`, then `cd old`, then `pwd`. See how our location in the filesystem
+changed. Do `ls` to look at the old agendas. do `cat [agenda]` on a few agenda
+files to see what we used to be up to. Do `ls -l` to see when these files were
+made.
+
+Do `cd ..` to go back to /cat/doc/meetings. Do `nano agenda.dog` to open up the
+dog agenda. Use the up and down arrows to move through the file. Scroll down to
+Fri Sep 05 1997 and tell me who was absent that Friday. When you're done, quit
+nano using ctrl+x. If you accidentally edit the file, don't try to save it.
+
+/cat/bin
+--------
+
+Do `cd /cat/bin`. This is where we store random tools that should be shared. Do
+`ls` to see what tools are available. Do `ls -l` to see the dates on the files.
+
+Pick a few files in this directory, and do `file [filename]` to see what kind of
+file it is. If you see anything like "ELF 32-bit MSB executable," don't try to
+cat or nano it. If you see something like "shell script text executable" or
+anything with "text" in it, you can open it with nano or cat. Open a few files,
+with cat or nano, look at their contents, and be sure not to save any edits.
+
+Some of the files you can open are fairly elaborate scripts. Try to find the
+simpler files, like `akimbo` or `why`.
+
+To remind us where we are, do `pwd` to see where we are, then run `./akimbo` and
+`./why`. Also do `/cat/bin/why` and compare this. Remember the significance of
+'.' and '..'. If you don't recall, ask.
+
+Find something interesting in this directory. Send details to me.
+
+I've thrown a few gag programs into /cat/bin. Use ls with the long listing flag 
+to find which of these files I've created. If you don't know how to do the long
+listing, check the man page or ask for help. Send me the names of the files 
+I've made.
+
+Extra credit
+------------
+
+Hunner and Kennobaka are a pair of old splatnix claws that have since found
+greener pastures, but back in the day they wrote a lot of code. Go to their
+homedirs, /home/linux/hunner, /home/solaris/hunner, /home/linux/fellina, and
+home/solaris/fellina, and find something interesting.
+
+Hints:
+  - /home/linux/fellina/printers
+  - /home/linux/hunner/scripts
+
+Moar extra credit
+-----------------
+
+Find the secret agenda.
+
+Super fun omg extra credit
+--------------------------
+
+Due to a strange series of events, most solaris machines share a common
+/usr/local. It has some old stuff. Really old. ssh to scalpel.cat.pdx.edu, `cd
+/usr/local` and find something REALLY old. The older the better. The weirder the
+better. Report back to me.
+
+Hint: the find command can be used to search file files by type and time last
+modified.
