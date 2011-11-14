@@ -1,4 +1,4 @@
-Happy fun unix time 001
+Happy fun unix time, vim edition
 =======================
 
 Introduction
@@ -24,6 +24,10 @@ happy fun unix times to make them more happy, fun, unix, and time.
 Description
 -----------
 
-Editors
+This happy fun unix time is extra happy, fun, and time, since I'm pointing you
+to vimtutor. Vimtutor is an introduction to the vim editor. It'll walk you
+through the basic commands and start working up towards the more advanced
+functionality.
 
-# vimtutor. Damn I'm lazy.
+To run vimtutor, run `vimtutor` on the command line.
+
