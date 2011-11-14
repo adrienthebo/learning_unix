@@ -1,0 +1,46 @@
+Happy fun unix time 002
+=======================
+
+Introduction
+------------
+
+These are meant to be a series of exercises to help you explore our environment,
+try out new things, and learn.
+
+At any point if you are uncertain, use google, ask a fellow zombie or a more
+senior cat, or pm finch for help. The goal of this is to learn by whatever
+method that works for you.
+
+If you stumble upon a concept that doesn't make sense or have not heard of, it's
+fine to move past it. There's a lot to learn so don't let small details slow you
+down. Try to absorb as much as you can.
+
+If there is a section that says 'send details to me,' this means I'm actively
+interested in your response and want your feedback or I want to see what you've
+found. If you would be so kind, write up the things you find or work through in
+this and then send me a copy when you're done. This way, I can improve these
+happy fun unix times to make them more happy, fun, unix, and time.
+
+Description
+-----------
+
+ - The tao of unix
+ - Text as the lingua franca of unix
+ - commands should do one small thing and do it well
+ - assemble small bits of funcionality into neat things
+
+Writing output to a file
+--------------------------
+
+Reading input from a file
+-------------------------
+
+Piping information across commands
+----------------------------------
+
+Extra credit
+------------
+
+/proc/self/asterisk
+
+man 5 proc

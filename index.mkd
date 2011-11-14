@@ -5,11 +5,16 @@ Index
 -----
 
  # unix001.mkd: Introduction to the command line
- # unix002.mkd: Redirection, chaining, smoke, and mirrors
+ # unix002.mkd: Redirection, chaining, smoke, and mirrors. TODO
+ # unix003.mkd: bash scripting. TODO
+ # unix004.mkd: processes. TODO
 
 
-References:
+ # Eventually: Playing with ttys
 
-Outside references
 
- # unix-vim.mkd: Vim and vimtutor
+Tools of the trade
+------------------
+
+ # unix-vim.mkd: Vim and vimtutor. Learn you some vim!
+ # Eventually: git
