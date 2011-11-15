@@ -4,22 +4,21 @@ Happy fun UNIX time
 Index
 -----
 
- - [Introduction to the Command Line](unix001-intro/)
+ - [Introduction to the Command Line](unix001-intro/) (Still cleaning this up)
 
 TODO
 ----
 
- - unix001.mkd: Introduction to the command line
  - unix002.mkd: Redirection, chaining, smoke, and mirrors. TODO
  - unix003.mkd: bash scripting. TODO
  - unix004.mkd: processes. TODO
 
 
- # Eventually: Playing with ttys
+ - Eventually: Playing with ttys
 
 
 Tools of the trade
 ------------------
 
- # unix-vim.mkd: Vim and vimtutor. Learn you some vim!
- # Eventually: git
+ - unix-vim.mkd: Vim and vimtutor. Learn you some vim!
+ - Eventually: git
