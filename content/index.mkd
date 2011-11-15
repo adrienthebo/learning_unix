@@ -4,10 +4,15 @@ Happy fun UNIX time
 Index
 -----
 
- # unix001.mkd: Introduction to the command line
- # unix002.mkd: Redirection, chaining, smoke, and mirrors. TODO
- # unix003.mkd: bash scripting. TODO
- # unix004.mkd: processes. TODO
+ - [Introduction to the Command Line](unix001-intro/)
+
+TODO
+----
+
+ - unix001.mkd: Introduction to the command line
+ - unix002.mkd: Redirection, chaining, smoke, and mirrors. TODO
+ - unix003.mkd: bash scripting. TODO
+ - unix004.mkd: processes. TODO
 
 
  # Eventually: Playing with ttys
