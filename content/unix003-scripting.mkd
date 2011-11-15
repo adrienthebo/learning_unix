@@ -1,0 +1,8 @@
+Scripting, or Doing Insane Things in Rapid Order
+================================================
+
+References
+----------
+
+* http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
+
