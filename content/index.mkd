@@ -6,13 +6,13 @@ Index
 
  - [Introduction to the Command Line](unix001-intro/) (Still cleaning this up)
 
+
 TODO
 ----
 
- - unix002.mkd: Redirection, chaining, smoke, and mirrors. TODO
- - unix003.mkd: bash scripting. TODO
- - unix004.mkd: processes. TODO
-
+ - [Redirection and the Tao of Unix](unix002-redirection/)
+ - [Scripting](unix002-scripting/)
+ - [Processes, or lack thereof.](unix004-processes/)
 
  - Eventually: Playing with ttys
 
