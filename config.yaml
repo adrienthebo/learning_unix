@@ -40,6 +40,9 @@ data_sources:
     # same as the items root, but applies to layouts rather than items.
     layouts_root: /
 
+
+baseurl: /
+
 # Configuration for the “watch” command, which watches a site for changes and
 # recompiles if necessary.
 watcher:

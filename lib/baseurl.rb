@@ -1,3 +1,3 @@
 def baseurl
-  "/~finch/learning_unix"
+  @config["baseurl"]
 end
