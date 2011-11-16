@@ -1,4 +1,0 @@
-processes
-forkbombs/ulimit
-tarbombs/tar -tf/tar -xf archive specific\_file
-users/uids/gids

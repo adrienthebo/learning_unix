@@ -44,15 +44,23 @@ Index
   2. Redirection and the Tao of Unix TODO
   3. [Scripting](unix003-scripting/) (Partially done)
 
-
 TODO
 ----
 
- - [Redirection and the Tao of Unix](unix002-redirection/) (Stubbed out)
- - [Processes, or lack thereof.](unix004-processes/)
+  - [Redirection and the Tao of Unix](unix002-redirection/) (Stubbed out)
+  - [Processes, or lack thereof.](unix004-processes/)
 
- - Eventually: Playing with ttys
+Speculative topics
+------------------
 
+  1. Job control
+  2. Permissions
+  3. Users and groups
+  4. Filesystems
+  5. Playing with ttys
+
+If there's something that I haven't written about that isn't listed here and
+you would like to learn more about it, let me know.
 
 Tools of the trade
 ------------------
