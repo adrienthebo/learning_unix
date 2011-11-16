@@ -363,6 +363,7 @@ code {
 	line-height: 1.4em;
 }
 pre > code {
+	color: black;
 	background-color: transparent;
 }
 /* @end */
