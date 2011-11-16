@@ -148,4 +148,3 @@ References
 
  - http://en.wikipedia.org/wiki/Shebang\_(Unix)
  - http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
-

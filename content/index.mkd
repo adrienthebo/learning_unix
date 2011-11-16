@@ -26,11 +26,22 @@ found. If you would be so kind, write up the things you find or work through in
 this and then send me a copy when you're done. This way, I can improve these
 happy fun unix times to make them more happy, fun, unix, and time.
 
+This site is actively under development.
+
+Conventions
+-----------
+
+Commands that you should run will be styled like `whoami`. Parts of the
+command that you should change will be enclosed in brackets, so `id [your
+account]` would be `id finch` for finch.
+
+More conventions to follow.
+
 Index
 -----
 
   1. [Introduction to the Command Line](unix001-intro/) (Still cleaning this up)
-  2. In progress
+  2. Redirection and the Tao of Unix TODO
   3. [Scripting](unix003-scripting/) (Partially done)
 
 
@@ -47,4 +58,5 @@ Tools of the trade
 ------------------
 
  - [Vim](unix-vim): Vim and vimtutor. Learn you some vim!
+ - Eventually: ssh
  - Eventually: git

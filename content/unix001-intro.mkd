@@ -61,10 +61,6 @@ Inspecting files
 /cat/doc
 --------
 
-Commands that you should run will be enclosed in back quotes, like `whoami`.
-Parts of the command that you should change will be enclosed in brackets, so `id
-[your account]` would be `id finch` for finch.
-
 Start off by doing `cd /cat/doc`. Do `ls` here. This is where we store general
 documents like signs and forms.
 
