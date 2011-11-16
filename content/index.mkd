@@ -29,14 +29,15 @@ happy fun unix times to make them more happy, fun, unix, and time.
 Index
 -----
 
- - [Introduction to the Command Line](unix001-intro/) (Still cleaning this up)
+  1. [Introduction to the Command Line](unix001-intro/) (Still cleaning this up)
+  2. In progress
+  3. [Scripting](unix003-scripting/) (Partially done)
 
 
 TODO
 ----
 
- - [Redirection and the Tao of Unix](unix002-redirection/)
- - [Scripting](unix003-scripting/)
+ - [Redirection and the Tao of Unix](unix002-redirection/) (Stubbed out)
  - [Processes, or lack thereof.](unix004-processes/)
 
  - Eventually: Playing with ttys
@@ -45,5 +46,5 @@ TODO
 Tools of the trade
 ------------------
 
- - unix-vim.mkd: Vim and vimtutor. Learn you some vim!
+ - [Vim](unix-vim): Vim and vimtutor. Learn you some vim!
  - Eventually: git

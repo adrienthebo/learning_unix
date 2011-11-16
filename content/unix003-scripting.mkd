@@ -19,10 +19,14 @@ in your environment.
 Commands
 --------
 
+You have more commands to look up before we continue. Go do so now. I'll wait.
+
   - echo
   - test
     - notice that '[' is an alias of test. This is important.
     - This is also a little mind blowing.
+
+If you didn't look them up I will eat your face.
 
 Making a file executable
 ------------------------
@@ -40,8 +44,9 @@ You should run `chmod a+x myprogram` to add the execute permission to the
 program.
 
 **Note**: Do not execute `chmod 777 [file]` in any case, until you know what
-you're doing. If you do this I will fill up your entire unix quota.
-  
+you're doing. If you do this I will fill up your entire unix quota. *YOUR.
+ENTIRE. UNIX. QUOTA.*
+
 
 A Basic Example
 ---------------
@@ -59,9 +64,45 @@ named the previous script "hello.sh", you could run it by doing `bash hello.sh`
 or `./hello.sh`.
 
 
+Variables
+---------
+
+    #!/bin/bash
+    myname=finch
+    echo "Hello $myname"
+
+TODO difference between a=val and $a=val
 
 Flow Control, i.e. Making Decisions
 -----------------------------------
+
+    #!/bin/bash
+    if /bin/true
+    then
+      echo "Reality still functioning!"
+    else
+      echo "True is no longer true, I'm going to sit in a corner and cry."
+    fi
+
+Loops, or doing the same thing really really fast
+-------------------------------------------------
+
+    #!/bin/bash
+    for count in 1 2 3 4 5
+    do
+      echo "I have done this $count time(s)."
+    done
+
+- - -
+
+    another_counter=""
+    while [ "$another_counter" -ne "aaaa" ];
+    do
+      echo "My other counter is $another_counter"
+      another_counter="${another_counter}a"
+    end
+
+
 
 - - -
 
@@ -77,7 +118,7 @@ full scripts.)
 
     #!/usr/bin/yes
 
-- - - 
+- - -
 
     #!/bin/rm
 
