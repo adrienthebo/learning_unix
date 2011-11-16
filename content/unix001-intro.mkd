@@ -41,6 +41,9 @@ cd is a special command; it's called a shell builtin. It isn't a standard
 program but actually a tool that is built into your shell. If you can't find the
 man page for it, you can consult http://ss64.com/bash/cd.html
 
+- - -
+
+
 Your homedir
 ------------
 # TODO
@@ -104,6 +107,8 @@ I've thrown a few gag programs into /cat/bin. Use ls with the long listing flag
 to find which of these files I've created. If you don't know how to do the long
 listing, check the man page or ask for help. Send me the names of the files 
 I've made.
+
+- - -
 
 Extra credit
 ------------

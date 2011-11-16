@@ -11,6 +11,11 @@ file that contains a servies of commands and shell functions that can be
 With all of these sections, use `nano`, `vim`, or whatever text editor you would
 prefer to make these examples. If you're not sure, use `nano`.
 
+If there's a code example given, transcribe it into your edit. Don't copy it;
+pasting code into an editor can do strange things if you're not used to your
+editor. In addition, the practice of writing code will make you more comfortable
+in your environment.
+
 A Basic Example
 ---------------
 
@@ -20,17 +25,55 @@ A Basic Example
 The Shebang
 -----------
 
+The shebang is the `#!/bin/bash` component of the previous script. It specifies
+what command that the system should use to launch
 
+
+Flow Control, i.e. Making Decisions
+-----------------------------------
+
+- - -
 
 Extra Credit
 ------------
 
-Explain what would happen if you ran the following *script*.
+Explain what would happen if you ran the following *scripts*. (Yes, these are
+full scripts.)
+
+    #!/bin/echo
+
+- - -
+
+    #!/usr/bin/yes
+
+- - - 
 
     #!/bin/rm
+
+Moar Extra Credit
+-----------------
+
+You'll see the shebangs `#!/usr/bin/env ruby` and `#!/usr/bin/ruby` floating
+around in different scripts. However, they seemingly do the same thing. How do
+they differ? Why would you use one over the other?
+
+Hint: man env
+
+I have too much free time and/or I am skipping classes to write code
+--------------------------------------------------------------------
+
+Write a printer script.
+
+Then, write a runaway script.
+
+This is all far too simple for me. I require monumental tasks.
+--------------------------------------------------------------
+
+PM finch. He has something evil.
 
 References
 ----------
 
-* http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
+ - http://en.wikipedia.org/wiki/Shebang\_(Unix)
+ - http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
 
