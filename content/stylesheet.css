@@ -357,12 +357,14 @@ pre:hover {
 	overflow: visible;
 }
 code {
-	font-size: 1em;
+	/* font-size: 1em; */
+	font-size: 0.85em; /* Hack to make code look same size as body font */  
 	background-color: black;
 	color: silver;
-	line-height: 1.4em;
+	line-height: 1em;
 }
 pre > code {
+	font-size: 1em;
 	color: black;
 	background-color: transparent;
 }
