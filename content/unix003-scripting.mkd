@@ -16,6 +16,33 @@ pasting code into an editor can do strange things if you're not used to your
 editor. In addition, the practice of writing code will make you more comfortable
 in your environment.
 
+Commands
+--------
+
+  - echo
+  - test
+    - notice that '[' is an alias of test. This is important.
+    - This is also a little mind blowing.
+
+Making a file executable
+------------------------
+
+In windows, a file is executable depending on the name. For instance, if a file
+was named 'program.exe' you could run it, while if you renamed the file to
+'program.jpg' it would not be runnable. In Unix, commands are executable if they
+have permission to. Permissions will be explained in detail later, but for now
+if you get something like this:
+
+    % ./myprogram
+    zsh: permission denied: ./myprogram
+
+You should run `chmod a+x myprogram` to add the execute permission to the
+program.
+
+**Note**: Do not execute `chmod 777 [file]` in any case, until you know what
+you're doing. If you do this I will fill up your entire unix quota.
+  
+
 A Basic Example
 ---------------
 
@@ -26,7 +53,11 @@ The Shebang
 -----------
 
 The shebang is the `#!/bin/bash` component of the previous script. It specifies
-what command that the system should use to launch
+what command that the system should use to launch the script. The program listed
+by the shebang is effectively 'fed' the script as an argument. Thus, if you
+named the previous script "hello.sh", you could run it by doing `bash hello.sh`
+or `./hello.sh`.
+
 
 
 Flow Control, i.e. Making Decisions
