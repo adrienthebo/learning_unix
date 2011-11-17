@@ -1,3 +1,6 @@
+---
+title: Learning Unix
+---
 Learning Unix
 ===================
 
@@ -6,47 +9,24 @@ Or
 Happy Fun Unix Time
 -------------------
 
-Introduction
-------------
+- - -
 
-These are meant to be a series of exercises to help you explore our environment,
-try out new things, and learn.
+Getting Started
+---------------
 
-At any point if you are uncertain, use google, ask a fellow zombie or a more
-senior cat, or pm finch for help. The goal of this is to learn by whatever
-method that works for you.
+ * [Introduction and conventions](introduction/) Seriously, read this.
+ * [Preamble and reasoning](preamble/)
 
-If you stumble upon a concept that doesn't make sense or have not heard of, it's
-fine to move past it. There's a lot to learn so don't let small details slow you
-down. Try to absorb as much as you can.
-
-If there is a section that says 'send details to me,' this means I'm actively
-interested in your response and want your feedback or I want to see what you've
-found. If you would be so kind, write up the things you find or work through in
-this and then send me a copy when you're done. This way, I can improve these
-happy fun unix times to make them more happy, fun, unix, and time.
-
-This site is actively under development.
-
-Conventions
------------
-
-Commands that you should run will be styled like `whoami`. Parts of the
-command that you should change will be enclosed in brackets, so `id [your
-account]` would be `id finch` for finch.
-
-More conventions to follow.
-
-Index
+Topics
 -----
 
 These are in various stages of completion. If it isn't done yet, either come
 back later and pester me to finish a specific section.
 
-  1. [Navigating in the shell](001-navigation/) (Still cleaning this up)
-  2. [Redirection and the Tao of Unix](002-redirection/) (Stubbed out)
-  3. [Scripting](003-scripting/) (Partially done)
-  4. [Processes, or lack thereof.](004-processes/) (Stubbed out)
+ 1. [Navigating in the shell](001-navigation/) (Still cleaning this up)
+ 2. [Redirection and the Tao of Unix](002-redirection/) (Stubbed out)
+ 3. [Scripting](003-scripting/) (Partially done)
+ 4. [Processes, or lack thereof.](004-processes/) (Stubbed out)
 
 TODO
 ----

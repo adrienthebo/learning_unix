@@ -1,0 +1,14 @@
+---
+title: Preamble
+---
+
+Preamble
+========
+
+Todo
+
+ * Why you should chare
+ * Who is this catered to
+ * Brief history of Unix
+ * Why everything is so damn hard!
+
