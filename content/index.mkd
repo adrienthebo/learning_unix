@@ -23,10 +23,12 @@ Topics
 These are in various stages of completion. If it isn't done yet, either come
 back later and pester me to finish a specific section.
 
- 1. [Navigating in the shell](001-navigation/) (Still cleaning this up)
- 2. [Redirection and the Tao of Unix](002-redirection/) (Stubbed out)
- 3. [Scripting](003-scripting/) (Partially done)
- 4. [Processes, or lack thereof.](004-processes/) (Stubbed out)
+ 1. [Navigating in the shell](001-navigation/) (80%)
+ 1. Manipulating Files (0%)
+ 1. [Redirection and the Tao of Unix](002-redirection/) (10%)
+ 1. [Scripting](003-scripting/) (60%)
+ 1. Job control (0%)
+ 1. [Processes, or lack thereof.](004-processes/) (10%)
 
 TODO
 ----
@@ -41,18 +43,18 @@ Speculative topics
    * mv
    * rm
    * nano
-  2. Job control
+  1. Job control
    * suspend
    * bg
    * fg
    * jobs
    * &
    * disown
-  3. Permissions
-  4. Users and groups
-  5. Filesystems
-  6. Playing with ttys
-  7. Regular expressions
+  1. Permissions
+  1. Users and groups
+  1. Filesystems
+  1. Playing with ttys
+  1. Regular expressions
 
 If there's something that I haven't written about that isn't listed here and
 you would like to learn more about it, let me know.
