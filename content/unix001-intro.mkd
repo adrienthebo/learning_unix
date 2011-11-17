@@ -28,13 +28,14 @@ instance "man ls" will bring up the man page for ls. Read a bit; man pages can
 be extremely dense, jargon filled, and unclear so if you lose interest, move on.
 Try to read a bit of the description at the least.
 
+TODO using man with a pager
+
+  - less: a 'pager', or program that displays parts of a file at a time
   - ls: list files and directories
     - This command has an obscene amount of flags. Skim through, find one that
       is interesting/useful/odd/something, and explain it to me.
   - pwd: print the working directory, or 'where we are'
   - cat: takes files and prints them out together
-  - less: a 'pager', or program that displays parts of a file at a time
-  - nano: a user friendly editor
   - file: shows what type a file is, EG a document, music file, or executable binary
 
 cd is a special command; it's called a shell builtin. It isn't a standard
@@ -58,6 +59,10 @@ Running programs
 Inspecting files
 ----------------
 
+TODO less
+
+In lieu of this description, go read the less man page.
+
 /cat/doc
 --------
 
@@ -73,10 +78,10 @@ changed. Do `ls` to look at the old agendas. do `cat [agenda]` on a few agenda
 files to see what we used to be up to. Do `ls -l` to see when these files were
 made.
 
-Do `cd ..` to go back to /cat/doc/meetings. Do `nano agenda.dog` to open up the
+Do `cd ..` to go back to /cat/doc/meetings. Do `less agenda.dog` to open up the
 dog agenda. Use the up and down arrows to move through the file. Scroll down to
 Fri Sep 05 1997 and tell me who was absent that Friday. When you're done, quit
-nano using ctrl+x. If you accidentally edit the file, don't try to save it.
+less by hitting 'q'.
 
 /cat/bin
 --------
@@ -86,9 +91,9 @@ Do `cd /cat/bin`. This is where we store random tools that should be shared. Do
 
 Pick a few files in this directory, and do `file [filename]` to see what kind of
 file it is. If you see anything like "ELF 32-bit MSB executable," don't try to
-cat or nano it. If you see something like "shell script text executable" or
-anything with "text" in it, you can open it with nano or cat. Open a few files,
-with cat or nano, look at their contents, and be sure not to save any edits.
+cat or 'less' it. If you see something like "shell script text executable" or
+anything with "text" in it, you can open it with less or cat. Open a few files,
+with cat or less and look at their contents.
 
 Some of the files you can open are fairly elaborate scripts. Try to find the
 simpler files, like `akimbo` or `why`.
