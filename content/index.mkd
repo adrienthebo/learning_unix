@@ -40,15 +40,17 @@ More conventions to follow.
 Index
 -----
 
-  1. [Introduction to the Command Line](unix001-intro/) (Still cleaning this up)
-  2. Redirection and the Tao of Unix TODO
-  3. [Scripting](unix003-scripting/) (Partially done)
+These are in various stages of completion. If it isn't done yet, either come
+back later and pester me to finish a specific section.
+
+  1. [Navigating in the shell](001-navigation/) (Still cleaning this up)
+  2. [Redirection and the Tao of Unix](002-redirection/) (Stubbed out)
+  3. [Scripting](003-scripting/) (Partially done)
+  4. [Processes, or lack thereof.](004-processes/) (Stubbed out)
 
 TODO
 ----
 
-  - [Redirection and the Tao of Unix](unix002-redirection/) (Stubbed out)
-  - [Processes, or lack thereof.](unix004-processes/)
 
 Speculative topics
 ------------------
@@ -78,7 +80,7 @@ you would like to learn more about it, let me know.
 Tools of the trade
 ------------------
 
- - [Vim](unix-vim): Vim and vimtutor. Learn you some vim!
+ - [Vim](tools/vim/): Vim and vimtutor. Learn you some vim!
  - Eventually: ssh
  - Eventually: git
  - Eventually: procmail
