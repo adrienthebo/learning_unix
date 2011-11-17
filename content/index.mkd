@@ -53,12 +53,24 @@ TODO
 Speculative topics
 ------------------
 
-  1. Job control
-  2. Permissions
-  3. Users and groups
-  4. Filesystems
-  5. Playing with ttys
-  6. Regular expressions
+  1. Manipulating files and directories
+   * mkdir
+   * cp
+   * mv
+   * rm
+   * nano
+  2. Job control
+   * suspend
+   * bg
+   * fg
+   * jobs
+   * &
+   * disown
+  3. Permissions
+  4. Users and groups
+  5. Filesystems
+  6. Playing with ttys
+  7. Regular expressions
 
 If there's something that I haven't written about that isn't listed here and
 you would like to learn more about it, let me know.
