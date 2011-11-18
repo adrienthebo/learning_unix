@@ -200,12 +200,22 @@ TODO directly running commands
 
 TODO commands in $PATH
 
+- - -
 
-Commands
---------
+The Fun Begins
+--------------
+
+/cat is the location that cat specific documents, programs, and other
+miscellaneous files are stored. It's been around for a very long time, so there
+are some old relics of times past. We'll explore this to get some real world
+experience.
+
 
 From here on out, you should be doing this from a cat machine. Connect to
 ruby.cat.pdx.edu via putty and work from there.
+
+Commands
+--------
 
 Before you ride into battle against this happy fun unix time, know your weapons.
 Open the man page for each one of the commands by doing "man command"; for
@@ -235,14 +245,6 @@ TODO less
 In lieu of this description, go read the less man page.
 
 - - -
-
-The Fun Begins
---------------
-
-/cat is the location that cat specific documents, programs, and other
-miscellaneous files are stored. It's been around for a very long time, so there
-are some old relics of times past. We'll explore this to get some real world
-experience.
 
 /cat/doc
 --------
