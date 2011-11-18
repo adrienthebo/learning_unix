@@ -1,9 +1,9 @@
 ---
-title: Navigating the Filesystem
+title: Surviving and Navigating the Filesystem
 ---
 
-Navigating the Filesystem
-=========================
+Surviving and Navigating the Filesystem
+=======================================
 
 Description
 -----------
