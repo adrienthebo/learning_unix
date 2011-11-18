@@ -201,6 +201,26 @@ miscellaneous files are stored. It's been around for a very long time, so there
 are some old relics of times past. We'll explore this to get some real world
 experience.
 
+We mainly care about this part of the filesystem:
+
+    /
+    ...
+    ├── cat
+    │   ├── bin
+    │   │   ├── akimbo
+    │   │   ├── cancelall
+    │   │   ├── grouplist
+    │   │   ├── :q
+    │   │   ├── qotd
+    │   │   ├── netgrouplist
+    │   │   └── why
+    │   └── doc
+    │       ├── meetings
+    │       │   ├── agenda.dog
+    │       │   └── agenda.splatnix
+    │       └── formletters
+    ...
+
 
 From here on out, you should be doing this from a cat machine. Connect to
 ruby.cat.pdx.edu via putty and work from there.
