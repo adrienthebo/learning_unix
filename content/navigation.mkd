@@ -1,15 +1,16 @@
 ---
-title: Introduction to the Command Line
+title: Navigating the Filesystem
 ---
 
-Introduction to the Command Line
-=======================
+Navigating the Filesystem
+=========================
 
 Description
 -----------
 
-This happy fun unix time will show you how to get around a unix system, look
-at files, and run some basic programs.
+To get started, we need to learn how to get around and understand the average
+unix system. This should run over the basics of filesystems, how to get around,
+run command, and look at things.
 
 /cat is the location that cat specific documents, programs, and other
 miscellaneous files are stored. It's been around for a very long time, so there
@@ -30,13 +31,13 @@ Try to read a bit of the description at the least.
 
 TODO using man with a pager
 
-  - less: a 'pager', or program that displays parts of a file at a time
-  - ls: list files and directories
+  - `less`: a 'pager', or program that displays parts of a file at a time
+  - `ls`: list files and directories
     - This command has an obscene amount of flags. Skim through, find one that
       is interesting/useful/odd/something, and explain it to me.
-  - pwd: print the working directory, or 'where we are'
-  - cat: takes files and prints them out together
-  - file: shows what type a file is, EG a document, music file, or executable binary
+  - `pwd`: print the working directory, or 'where we are'
+  - `cat`: takes files and prints them out together
+  - `file`: shows what type a file is, EG a document, music file, or executable binary
 
 cd is a special command; it's called a shell builtin. It isn't a standard
 program but actually a tool that is built into your shell. If you can't find the
@@ -92,10 +93,45 @@ something like this:
     ├── usr
     └── var
 
+Now that we have a massive blob of text, let's break this apart.
+
+The root directory
+------------------
+
+    / <------ This is the root directory
+    ├── bin
+    ├── boot
+    ├── cat
+    │   ├── bin
+    │   │   ├── akimbo
+    │   │   ├── cancelall
+    ...
+
+Let's first start discuss the concept of a 'root' directory. In a general sense,
+the root directory would be the directory that contains all other directories,
+and if you were to represent directories as branches in a tree, the root
+directory would be at the root of the tree.
+
+In Windows, the 'root' of the normal filesystem would be considered 'C:\\', and
+in there you would have directories like this:
+
+ * Users and Settings
+ * Program Files
+ * Windows
+
+You might have other drives like D:\ and others. Each drive would be the root,
+or base level of a filesystem.
+
+We can map some of these concepts to unix systems. In unix, there's one base
+filesystem, and it starts at '/'. from. In unix, we don't have multiple roots
+like Windows does with 'C:\\' and 'D:\\', and instead individual hard drives are
+more or less hidden, so you don't really have to know what files are stored
+where.
 
 Your homedir
 ------------
 
+Nameless:
 Ok, this is a bit harder to explain to people who aren't used to it.
 
 Simply put, your homedir is a filesystem that you "own." You can
@@ -112,6 +148,58 @@ you login has a tilde (~) which is bash shorthand for "your homedir."
 
 Your homedir is important enough it has it's own environment variable,
 which is HOME.
+
+    ...
+    ├── lib
+    ├── u <----- This is where all home directories are stored
+    │   ├── finch <----- This is finch's home directory
+    │   │   ├── local
+    │   │   │   ├── bin
+    │   │   │   └── lib
+    │   │   ├── .profile
+    │   │   ├── .zshrc
+    │   │   └── .zshenv
+    │   └── troll <----- This is troll's home directory
+    │       ├── evil
+    │       ├── lulz
+    │       └── miley_cyrus
+    ...
+
+You may be familiar with your own home directory in Windows, where you had
+directories like 'My Documents,' 'My Pictures,' 'Desktop,' and other such files
+and directories. In unix, this is called your home directory, or homedir for
+short. When you log into a system, either graphically or from the command line,
+you'll usually start here.
+
+Paths
+-----
+
+    ...
+    ├── lib
+    ├── u <----- This would be '..' relative to /u/troll
+    ...
+    │   └── troll <----- If we are here, aka /u/troll, this would be '.'
+    │       ├── evil
+    │       ├── lulz
+    │       └── miley_cyrus <---- This would be './miley_cyrus'
+    ...
+
+We call the location of a file in the filesystem the 'path' to the file. For
+instance, the path to the home directory for the miley\_cyrus directory in
+troll's homedir would be '/u/troll/miley\_cyrus'. This would be also called an
+absolute path, because the entire path is given from '/'.
+
+In contrast, if we were in troll's home directory, the path to that same
+directory would just be 'miley\_cyrus'. Since we're already in '/u/troll' we can
+simply access that directory instead of giving the absolute path, since it's
+shorter. Since this is relative to our current location, this would be called a
+relative path.
+
+While we're talking about relative paths, there are a couple
+special values: '.' and '..'. '.' refers to the current directory, so '.' would
+be '/u/troll' if we were in that directory. '..' is the parent directory, so
+'..' would be '/u' if we were in '/u/troll'. This means that you could also
+refer to 'miley\_cyrus' as './miley\_cyrus'.
 
 Running programs
 ----------------
