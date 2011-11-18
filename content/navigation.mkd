@@ -10,7 +10,7 @@ Description
 
 To get started, we need to learn how to get around and understand the average
 unix system. This should run over the basics of filesystems, how to get around,
-run command, and look at things.
+run commands, and look at things.
 
 - - -
 
