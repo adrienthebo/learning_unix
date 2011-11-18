@@ -12,11 +12,6 @@ To get started, we need to learn how to get around and understand the average
 unix system. This should run over the basics of filesystems, how to get around,
 run command, and look at things.
 
-/cat is the location that cat specific documents, programs, and other
-miscellaneous files are stored. It's been around for a very long time, so there
-are some old relics of times past. We'll explore this to get some real world
-experience.
-
 - - -
 
 The filesystem
@@ -228,6 +223,16 @@ Inspecting files
 TODO less
 
 In lieu of this description, go read the less man page.
+
+- - -
+
+The Fun Begins
+--------------
+
+/cat is the location that cat specific documents, programs, and other
+miscellaneous files are stored. It's been around for a very long time, so there
+are some old relics of times past. We'll explore this to get some real world
+experience.
 
 /cat/doc
 --------
