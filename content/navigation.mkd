@@ -1,9 +1,9 @@
 ---
-title: Introduction to the Command Line
+title: Navigating the Filesystem
 ---
 
-Introduction to the Command Line
-=======================
+Navigating the Filesystem
+=========================
 
 Description
 -----------
@@ -30,13 +30,13 @@ Try to read a bit of the description at the least.
 
 TODO using man with a pager
 
-  - less: a 'pager', or program that displays parts of a file at a time
-  - ls: list files and directories
+  - `less`: a 'pager', or program that displays parts of a file at a time
+  - `ls`: list files and directories
     - This command has an obscene amount of flags. Skim through, find one that
       is interesting/useful/odd/something, and explain it to me.
-  - pwd: print the working directory, or 'where we are'
-  - cat: takes files and prints them out together
-  - file: shows what type a file is, EG a document, music file, or executable binary
+  - `pwd`: print the working directory, or 'where we are'
+  - `cat`: takes files and prints them out together
+  - `file`: shows what type a file is, EG a document, music file, or executable binary
 
 cd is a special command; it's called a shell builtin. It isn't a standard
 program but actually a tool that is built into your shell. If you can't find the
@@ -73,7 +73,6 @@ something like this:
     │       │   ├── agenda.dog
     │       │   └── agenda.splatnix
     │       └── formletters
-    ├── bin
     ├── lib
     ├── u
     │   ├── finch
