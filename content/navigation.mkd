@@ -76,6 +76,7 @@ something like this:
     ├── etc
     ├── dev
     ├── lib
+    ├── proc
     ├── u
     │   ├── finch
     │   │   ├── local
@@ -95,7 +96,22 @@ something like this:
 Your homedir
 ------------
 
-# TODO
+Ok, this is a bit harder to explain to people who aren't used to it.
+
+Simply put, your homedir is a filesystem that you "own." You can
+install programs and run them out of your homedir. Typically, the
+programs you run throw configuration stuffs into your homedir in the
+form of .files ("dot" files) and .directories. In a posix environment,
+files and folders that begin with a . won't be shown automatically if
+you ls them.
+
+Oh yeah, and you can put your files in your homedir too.
+
+In bash, (which is usually what you use these days) your prompt when
+you login has a tilde (~) which is bash shorthand for "your homedir."
+
+Your homedir is important enough it has it's own environment variable,
+which is HOME.
 
 Running programs
 ----------------
