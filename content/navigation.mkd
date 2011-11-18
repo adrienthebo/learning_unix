@@ -17,32 +17,6 @@ miscellaneous files are stored. It's been around for a very long time, so there
 are some old relics of times past. We'll explore this to get some real world
 experience.
 
-Commands
---------
-
-From here on out, you should be doing this from a cat machine. Connect to
-ruby.cat.pdx.edu via putty and work from there.
-
-Before you ride into battle against this happy fun unix time, know your weapons.
-Open the man page for each one of the commands by doing "man command"; for
-instance "man ls" will bring up the man page for ls. Read a bit; man pages can
-be extremely dense, jargon filled, and unclear so if you lose interest, move on.
-Try to read a bit of the description at the least.
-
-TODO using man with a pager
-
-  - `less`: a 'pager', or program that displays parts of a file at a time
-  - `ls`: list files and directories
-    - This command has an obscene amount of flags. Skim through, find one that
-      is interesting/useful/odd/something, and explain it to me.
-  - `pwd`: print the working directory, or 'where we are'
-  - `cat`: takes files and prints them out together
-  - `file`: shows what type a file is, EG a document, music file, or executable binary
-
-cd is a special command; it's called a shell builtin. It isn't a standard
-program but actually a tool that is built into your shell. If you can't find the
-man page for it, you can consult http://ss64.com/bash/cd.html
-
 - - -
 
 The filesystem
@@ -216,6 +190,37 @@ refer to 'miley\_cyrus' as './miley\_cyrus'.
 
 Running programs
 ----------------
+
+TODO directly running commands
+
+TODO commands in $PATH
+
+
+Commands
+--------
+
+From here on out, you should be doing this from a cat machine. Connect to
+ruby.cat.pdx.edu via putty and work from there.
+
+Before you ride into battle against this happy fun unix time, know your weapons.
+Open the man page for each one of the commands by doing "man command"; for
+instance "man ls" will bring up the man page for ls. Read a bit; man pages can
+be extremely dense, jargon filled, and unclear so if you lose interest, move on.
+Try to read a bit of the description at the least.
+
+TODO using man with a pager
+
+  - `less`: a 'pager', or program that displays parts of a file at a time
+  - `ls`: list files and directories
+    - This command has an obscene amount of flags. Skim through, find one that
+      is interesting/useful/odd/something, and explain it to me.
+  - `pwd`: print the working directory, or 'where we are'
+  - `cat`: takes files and prints them out together
+  - `file`: shows what type a file is, EG a document, music file, or executable binary
+
+cd is a special command; it's called a shell builtin. It isn't a standard
+program but actually a tool that is built into your shell. If you can't find the
+man page for it, you can consult http://ss64.com/bash/cd.html
 
 Inspecting files
 ----------------
