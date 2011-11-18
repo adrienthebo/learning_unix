@@ -122,11 +122,24 @@ in there you would have directories like this:
 You might have other drives like D:\ and others. Each drive would be the root,
 or base level of a filesystem.
 
-We can map some of these concepts to unix systems. In unix, there's one base
+Unix has some similar concepts to this. In unix, there's one base
 filesystem, and it starts at '/'. from. In unix, we don't have multiple roots
 like Windows does with 'C:\\' and 'D:\\', and instead individual hard drives are
 more or less hidden, so you don't really have to know what files are stored
 where.
+
+A brief overview of what's in the root directory would be something like this:
+
+  * **/bin**: Short for 'binaries', this is where programs can be found. This is
+            somewhat like 'Program Files'.
+  * **/etc**: Short for 'et cetera', this is where configuration files for the
+            system are found. This is somewhat like 'Windows'.
+  * **/home** and **/u**: On cat systems we call this **/u**, elsewhere it's
+            called **/home**. This is where your home directory is; it's
+            similar to 'Users and Settings'. We'll talk about this in more
+            detail later.
+
+There are obviously many other directories that I'm not mentioning, but we'll get to all of those later.
 
 Your homedir
 ------------
