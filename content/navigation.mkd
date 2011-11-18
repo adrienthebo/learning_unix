@@ -19,8 +19,8 @@ The filesystem
 
 The filesystem is a representation of what is on your system, and contains
 things like directories, programs, libraries, documents, and other
-things. We represent this as a 'tree' structure, where we have a directory
-called the 'root' directory that holds a set of files and directories, and these
+things. We represent this as a tree structure, where we have a directory
+called the **root** directory that holds a set of files and directories, and these
 directories successively have more contents.
 
 A simplified version of the cat filesystem on a normal computer would look
@@ -76,7 +76,7 @@ The root directory
     │   │   ├── cancelall
     ...
 
-Let's first start discuss the concept of a 'root' directory. In a general sense,
+Let's first start discuss the concept of a root directory. In a general sense,
 the root directory would be the directory that contains all other directories,
 and if you were to represent directories as branches in a tree, the root
 directory would be at the root of the tree.
@@ -181,11 +181,17 @@ simply access that directory instead of giving the absolute path, since it's
 shorter. Since this is relative to our current location, this would be called a
 relative path.
 
-While we're talking about relative paths, there are a couple
-special values: '.' and '..'. '.' refers to the current directory, so '.' would
-be '/u/troll' if we were in that directory. '..' is the parent directory, so
-'..' would be '/u' if we were in '/u/troll'. This means that you could also
-refer to 'miley\_cyrus' as './miley\_cyrus'.
+While we're talking about relative paths, there are a couple special values: '.'
+and '..'.
+
+'.' refers to the current directory, so '.' would be '/u/troll' if we
+were in that directory. This means that you could also refer to 'miley\_cyrus' as
+'./miley\_cyrus' if you were in /u/troll.
+
+'..' is the parent directory, or the directory that contains the current
+directory, so '..' would be '/u' if we were in '/u/troll'.
+
+TODO talk about tilde?
 
 Running programs
 ----------------
