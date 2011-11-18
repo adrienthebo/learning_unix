@@ -8,8 +8,9 @@ Navigating the Filesystem
 Description
 -----------
 
-This happy fun unix time will show you how to get around a unix system, look
-at files, and run some basic programs.
+To get started, we need to learn how to get around and understand the average
+unix system. This should run over the basics of filesystems, how to get around,
+run command, and look at things.
 
 /cat is the location that cat specific documents, programs, and other
 miscellaneous files are stored. It's been around for a very long time, so there
@@ -89,10 +90,68 @@ something like this:
     ├── usr
     └── var
 
+Now that we have a massive blob of text, let's break this apart.
+
+The root directory
+------------------
+
+    / <------ This is the root directory
+    ├── bin
+    ├── boot
+    ├── cat
+    │   ├── bin
+    │   │   ├── akimbo
+    │   │   ├── cancelall
+    ...
+
+Let's first start discuss the concept of a 'root' directory. In a general sense,
+the root directory would be the directory that contains all other directories,
+and if you were to represent directories as branches in a tree, the root
+directory would be at the root of the tree.
+
+In Windows, the 'root' of the normal filesystem would be considered 'C:\\', and
+in there you would have directories like this:
+
+ * Users and Settings
+ * Program Files
+ * Windows
+
+You might have other drives like D:\ and others. Each drive would be the root,
+or base level of a filesystem.
+
+We can map some of these concepts to unix systems. In unix, there's one base
+filesystem, and it starts at '/'. from. In unix, we don't have multiple roots
+like Windows does with 'C:\\' and 'D:\\', and instead individual hard drives are
+more or less hidden, so you don't really have to know what files are stored
+where.
+
 Your homedir
 ------------
 
-# TODO
+    ...
+    ├── lib
+    ├── u <----- This is where all home directories are stored
+    │   ├── finch <----- This is finch's home directory
+    │   │   ├── local
+    │   │   │   ├── bin
+    │   │   │   └── lib
+    │   │   ├── .profile
+    │   │   ├── .zshrc
+    │   │   └── .zshenv
+    │   └── troll <----- This is troll's home directory
+    │       ├── evil
+    │       ├── lulz
+    │       └── miley_cyrus
+    ...
+
+You may be familiar with your own home directory in Windows, where you had
+directories like 'My Documents,' 'My Pictures,' 'Desktop,' and other such files
+and directories. In unix, this is called your home directory, or homedir for
+short. When you log into a system, either graphically or from the command line,
+you'll usually start here.
+
+Paths
+-----
 
 Running programs
 ----------------
