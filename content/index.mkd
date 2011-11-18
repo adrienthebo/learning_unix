@@ -44,6 +44,9 @@ Speculative topics
   * rm
   * nano
  1. Playing with the shell
+   * how commands work
+    * arguments
+    * options
    * Job control
     * suspend
     * bg
