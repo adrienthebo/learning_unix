@@ -108,7 +108,10 @@ A brief overview of what's in the root directory would be something like this:
             similar to 'Users and Settings'. We'll talk about this in more
             detail later.
 
-There are obviously many other directories that I'm not mentioning, but we'll get to all of those later.
+As you can see, while things have different names and may be in different
+places, there's a fair bit in common with Windows and unix. It isn't *entirely*
+foreign, right? Admittedly, there are obviously many other directories that I'm
+not mentioning, but we'll get to all of those later.
 
 Your homedir
 ------------
