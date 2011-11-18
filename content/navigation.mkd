@@ -153,6 +153,33 @@ you'll usually start here.
 Paths
 -----
 
+    ...
+    ├── lib
+    ├── u <----- This would be '..' relative to /u/troll
+    ...
+    │   └── troll <----- If we are here, aka /u/troll, this would be '.'
+    │       ├── evil
+    │       ├── lulz
+    │       └── miley_cyrus <---- This would be './miley_cyrus'
+    ...
+
+We call the location of a file in the filesystem the 'path' to the file. For
+instance, the path to the home directory for the miley\_cyrus directory in
+troll's homedir would be '/u/troll/miley\_cyrus'. This would be also called an
+absolute path, because the entire path is given from '/'.
+
+In contrast, if we were in troll's home directory, the path to that same
+directory would just be 'miley\_cyrus'. Since we're already in '/u/troll' we can
+simply access that directory instead of giving the absolute path, since it's
+shorter. Since this is relative to our current location, this would be called a
+relative path.
+
+While we're talking about relative paths, there are a couple
+special values: '.' and '..'. '.' refers to the current directory, so '.' would
+be '/u/troll' if we were in that directory. '..' is the parent directory, so
+'..' would be '/u' if we were in '/u/troll'. This means that you could also
+refer to 'miley\_cyrus' as './miley\_cyrus'.
+
 Running programs
 ----------------
 
