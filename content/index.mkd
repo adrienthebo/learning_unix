@@ -66,3 +66,14 @@ Tools of the trade
  - Eventually: ssh
  - Eventually: git
  - Eventually: procmail
+
+Authors/Credits
+---------------
+
+ * finch
+ * nameless
+
+Thanks to all the lovely folks that have taken to read this and provide
+feedback.
+
+
