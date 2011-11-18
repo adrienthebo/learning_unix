@@ -16,9 +16,30 @@ seemingly unintelligible that somehow you have to learn.
 
 Why would you do this to yourself?
 
+And I sit here, staring at my own blinking cursor, and I don't even know where
+to begin.
+
+ * Unix is everywhere. EVERYWHERE. Many systems are powered by Unix that you
+   wouldn't expect, like your home router, your Android phone, and some of your
+   more advanced home appliances. OSX is Unix at its core. And unix pretty much
+   runs the web these days; it is used to host the majority of websites. Unix
+   also forms the backbone of the Internet; it's in core network infrastructure.
+   Unix also pretty much exclusively powers Google and Amazon, to name two of
+   the biggest Internet heavyweights.
+ * Unix is powerful. It's more or less built to be customized, tweaked, and
+   improved. Linux itself is entirely open source - if you want, you can change
+   quite literally any part of the system. When you're in the shell, you can
+   rapidly build up a series of simple commands to do extremely complex things
+   nobody else envisioned.
+ * Unix is stable. My own personal server has been up for 117 days. One of our
+   unix servers has been up for 779 days. If you need extreme uptime,
+   reliablility, or durability, you run unix. Linux runs all of the top 10
+   supercomputers, and out of the top 500, A unix variant runs on nearly all of
+   them.
+
 Todo
 
- * Why you should chare
+ * Why you should care
  * Who is this catered to
  * Brief history of Unix
  * Why everything is so damn hard!
