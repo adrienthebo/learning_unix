@@ -118,6 +118,7 @@ but we'll get to all of those later.
 Your home directory
 -------------------
 
+    /
     ...
     ├── lib
     ├── u <----- This is where all home directories are stored
@@ -151,6 +152,7 @@ much whatever you want here, as long as it isn't too big.
 Paths
 -----
 
+    /
     ...
     ├── lib
     ├── u <----- This would be '..' relative to /u/troll
