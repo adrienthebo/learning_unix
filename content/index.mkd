@@ -37,24 +37,27 @@ TODO
 Speculative topics
 ------------------
 
-  1. Manipulating files and directories
-   * mkdir
-   * cp
-   * mv
-   * rm
-   * nano
-  1. Job control
-   * suspend
-   * bg
-   * fg
-   * jobs
-   * &
-   * disown
-  1. Permissions
-  1. Users and groups
-  1. Filesystems
-  1. Playing with ttys
-  1. Regular expressions
+ 1. Manipulating files and directories
+  * mkdir
+  * cp
+  * mv
+  * rm
+  * nano
+ 1. Playing with the shell
+   * Job control
+    * suspend
+    * bg
+    * fg
+    * jobs
+    * &
+    * disown
+   * variables
+   * the prompt
+ 1. Permissions
+ 1. Users and groups
+ 1. Filesystems
+ 1. Playing with ttys
+ 1. Regular expressions
 
 If there's something that I haven't written about that isn't listed here and
 you would like to learn more about it, let me know.
