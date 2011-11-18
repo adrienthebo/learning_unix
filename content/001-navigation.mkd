@@ -1,4 +1,4 @@
---- 
+---
 title: Introduction to the Command Line
 ---
 
@@ -44,13 +44,55 @@ man page for it, you can consult http://ss64.com/bash/cd.html
 
 - - -
 
+The filesystem
+--------------
+
+The filesystem is a representation of what is on your system, and contains
+things like directories, programs, libraries, documents, and other
+things. We represent this as a 'tree' structure, where we have a directory
+called the 'root' directory that holds a set of files and directories, and these
+directories successively have more contents.
+
+A simplified version of the cat filesystem on a normal computer would look
+something like this:
+
+    /
+    ├── bin
+    ├── boot
+    ├── cat
+    │   ├── bin
+    │   │   ├── akimbo
+    │   │   ├── cancelall
+    │   │   ├── grouplist
+    │   │   ├── :q
+    │   │   ├── qotd
+    │   │   ├── netgrouplist
+    │   │   └── why
+    │   └── doc
+    │       ├── meetings
+    │       │   ├── agenda.dog
+    │       │   └── agenda.splatnix
+    │       └── formletters
+    ├── bin
+    ├── lib
+    ├── u
+    │   ├── finch
+    │   │   ├── local
+    │   │   │   ├── bin
+    │   │   │   └── lib
+    │   │   ├── .profile
+    │   │   ├── .zshrc
+    │   │   └── .zshenv
+    │   └── troll
+    │       ├── evil
+    │       ├── lulz
+    │       └── miley_cyrus
+    ├── usr
+    └── var
 
 Your homedir
 ------------
-# TODO
 
-The filesystem
---------------
 # TODO
 
 Running programs
@@ -104,9 +146,9 @@ To remind us where we are, do `pwd` to see where we are, then run `./akimbo` and
 
 Find something interesting in this directory. Send details to me.
 
-I've thrown a few gag programs into /cat/bin. Use ls with the long listing flag 
+I've thrown a few gag programs into /cat/bin. Use ls with the long listing flag
 to find which of these files I've created. If you don't know how to do the long
-listing, check the man page or ask for help. Send me the names of the files 
+listing, check the man page or ask for help. Send me the names of the files
 I've made.
 
 - - -
