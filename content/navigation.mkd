@@ -73,7 +73,8 @@ something like this:
     │       │   ├── agenda.dog
     │       │   └── agenda.splatnix
     │       └── formletters
-    ├── bin
+    ├── etc
+    ├── dev
     ├── lib
     ├── u
     │   ├── finch
@@ -89,6 +90,7 @@ something like this:
     │       └── miley_cyrus
     ├── usr
     └── var
+
 
 Your homedir
 ------------
