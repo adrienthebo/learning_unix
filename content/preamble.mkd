@@ -5,6 +5,17 @@ title: Preamble
 Preamble
 ========
 
+So, you're new to unix. You're from a world with a mouse and a keyboard, with
+graphics, help menus, suggestions, and where you can click around and figure
+things out by looking at them. Now you're in a world of hurt, where you're
+confronted by a text terminal that seems to be from the 1980s, with a blinking
+cursor that seems to mock you. The normal rules are thrown out, there's no clear
+reason why things are done any particular reason, consistency seems to be a
+distant memory, and there's an entire language that's entirely foreign and
+seemingly unintelligible that somehow you have to learn.
+
+Why would you do this to yourself?
+
 Todo
 
  * Why you should chare

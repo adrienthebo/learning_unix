@@ -14,7 +14,9 @@ Happy Fun Unix Time
 Getting Started
 ---------------
 
- * [Introduction and conventions](introduction/) Seriously, read this.
+You should read these before you dive in.
+
+ * [Introduction and conventions](introduction/)
  * [Preamble and reasoning](preamble/)
 
 Topics
