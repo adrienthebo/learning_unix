@@ -263,35 +263,77 @@ We mainly care about this part of the filesystem:
 From here on out, you should be doing this from a cat machine. Connect to
 ruby.cat.pdx.edu via putty and work from there.
 
-Commands
---------
+Before we charge into the hands on portion of this with all guns blazing, we
+need to know our weapons.
 
-Before you ride into battle against this happy fun unix time, know your weapons.
-Open the man page for each one of the commands by doing "man command"; for
-instance "man ls" will bring up the man page for ls. Read a bit; man pages can
-be extremely dense, jargon filled, and unclear so if you lose interest, move on.
-Try to read a bit of the description at the least.
+The Manual, or Man Pages
+------------------------
 
-TODO using man with a pager
+In ye Olde Goode Days, Unix quite literally came with a manual that was about a
+foot or so wide. Today, instead of carting thirty or so pounds of documentation
+around with us, the manual, or [man pages][manpages], are now available on almost all
+systems with the 'man' command. For instance, if you were to run `man man`, this
+would bring up the man page for the man command. Reading the man page for the
+man pages would be a good place to start.
 
-  - `less`: a 'pager', or program that displays parts of a file at a time
-  - `ls`: list files and directories
+[manpages][http://en.wikipedia.org/wiki/Man_page]
+
+It's important to note how man pages actually work. The man command itself
+mainly focuses on fetching and properly formatting the man page itself, but on
+linux systems 'man' would then hand the document over to a different command,
+'less' to actually show it. Less is what is known as a 'pager', so given a very
+long document 'less' will allow you to scroll through the document a page on the
+time.
+
+There are a few points to note about less:
+
+ * To exit, hit 'q'
+ * Normal arrow keys work (sometimes things can be intuitive)
+ * At the same time, a lot of vim keybindings also work with vim, such as hjkl. (Yay!)
+
+From here on out, I generally won't do comprehensive explanations of commands
+because it's time consuming, and the man pages are effectively the main form of
+documentation for commands. Since you'll be reading a lot of man pages, practice
+reading them will help. However, Marut put this best:
+
+> yeah. manpages are tools designed for experts. it's like you need at least 5
+> ranks in "Knowledge (unix)" before the manpages are really helpful.  But once
+> you get the background and figure out how to read them, they're awesome and
+> often the best resource for learning a new tool or application.
+
+In the case you run into a man page that makes NO sense whatsoever, and this
+isn't uncommon, ask another cat or finch for help deciphering the man pages.
+
+Commands to Know
+----------------
+
+Before you ride into battle, know your weapons.  Open the man page for each one
+of the commands by doing "man command"; for instance "man ls" will bring up the
+man page for ls. Read a bit; man pages can be extremely dense, jargon filled,
+and unclear so if you lose interest, move on.  Try to read a bit of the
+description at the least.
+
+  - **less**: I've already briefly touched on less, but it wouldn't hurt to go
+    back and read the actual man page for less.
+  - **ls**: list files and directories
     - This command has an obscene amount of flags. Skim through, find one that
       is interesting/useful/odd/something, and explain it to me.
-  - `pwd`: print the working directory, or 'where we are'
-  - `cat`: takes files and prints them out together
-  - `file`: shows what type a file is, EG a document, music file, or executable binary
+  - **pwd**: print the working directory, or where we are in the filesystem.
+  - **cat**: takes files and prints them out together
+  - **file**: shows what type a file is, EG a document, music file, or executable binary
 
 cd is a special command; it's called a shell builtin. It isn't a standard
 program but actually a tool that is built into your shell. If you can't find the
 man page for it, you can consult http://ss64.com/bash/cd.html
 
-Inspecting files
-----------------
+- - -
 
-TODO less
+From here on out this will be a little bit less verbose and will give you more
+of a chance to explore. Try to find interesting things and go beyond the
+assignment. Look at everything. Poke into nooks and crannies. The more you
+explore, the more things will make sense.
 
-In lieu of this description, go read the less man page.
+Alright, enough talk. Let's do this.
 
 - - -
 
