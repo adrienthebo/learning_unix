@@ -5,12 +5,13 @@ title: Surviving and Navigating the Filesystem
 Surviving and Navigating the Filesystem
 =======================================
 
-Description
------------
+Introduction
+------------
 
-To get started, we need to learn how to get around and understand the average
-unix system. This should run over the basics of filesystems, how to get around,
-run commands, and look at things.
+This is going to be a bit of a crash course on surviving on a unix system.  To
+get started, we need to learn how to get around and understand the average unix
+system. This should run over the basics of filesystems, how to get around, run
+commands, and inspect files and programs.
 
 - - -
 
