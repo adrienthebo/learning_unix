@@ -5,6 +5,9 @@ title: Preamble
 Preamble
 ========
 
+- - -
+"Unix is simple. It just takes a genius to understand its simplicity." – Dennis Ritchie
+
 So, you're new to Unix. You're from a world with a mouse and a keyboard, with
 graphics, help menus, suggestions, and where you can click around and figure
 things out by looking at them. Now you're in a world of hurt, where you're
