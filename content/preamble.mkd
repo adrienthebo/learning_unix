@@ -5,7 +5,7 @@ title: Preamble
 Preamble
 ========
 
-So, you're new to unix. You're from a world with a mouse and a keyboard, with
+So, you're new to Unix. You're from a world with a mouse and a keyboard, with
 graphics, help menus, suggestions, and where you can click around and figure
 things out by looking at them. Now you're in a world of hurt, where you're
 confronted by a text terminal that seems to be from the 1980s, with a blinking
@@ -17,7 +17,7 @@ seemingly unintelligible that somehow you have to learn.
 Why would you do this to yourself?
 
 And I sit here, staring at my own blinking cursor, and I don't even know where
-to begin.
+to begin to list all the reasons why you would want to learn this.
 
  * Unix is everywhere. EVERYWHERE. Many systems are powered by Unix that you
    wouldn't expect, like your home router, your Android phone, and some of your
@@ -44,3 +44,20 @@ Todo
  * Brief history of Unix
  * Why everything is so damn hard!
 
+Learning Unix - it's a lie
+--------------------------
+
+I keep calling this Learning Unix, but the reality that information from this
+is going to be specifically targeted at a few flavors of Unix. Linux is going
+to be my main target, but I'll also be discussing FreeBSD, OSX, and Solaris.
+There are many other types of Unix like systems out there, but if you're lucky
+you'll never encounter them. No, seriously. The Unix flavors that are real
+Unixes, they're scary. While I won't be addressing all the different types of
+Unix out there, hopefully I'll be explaining the concepts that you'll see on
+the more modern and common unix variants.
+
+
+References
+----------
+
+ 1. [Wikipedia: Unix Philosophy](http://en.wikipedia.org/wiki/Unix_philosophy)
