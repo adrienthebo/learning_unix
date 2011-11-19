@@ -1,0 +1,15 @@
+---
+title: Manipulating Files
+---
+
+Manipulating Files
+==================
+
+Commands
+--------
+
+  * mkdir
+  * cp
+  * mv
+  * rm
+  * nano

@@ -1,0 +1,23 @@
+---
+title: Playing With the Shell
+---
+
+Playing With the Shell
+======================
+
+Topics
+------
+
+ * how commands work
+  * arguments
+  * options
+ * Job control
+  * suspend
+  * bg
+  * fg
+  * jobs
+  * &
+  * disown
+ * variables
+ * the prompt
+ * tab completion

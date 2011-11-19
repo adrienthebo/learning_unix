@@ -25,11 +25,11 @@ Topics
 These are in various stages of completion. If it isn't done yet, either come
 back later and pester me to finish a specific section.
 
- 1. [Navigating in the shell](navigation/) (80%)
- 1. Manipulating Files (0%)
+ 1. [Navigating in the shell](navigation/) (90%)
+ 1. [Manipulating Files](manipulating_files/) (10%)
  1. [Redirection and the Tao of Unix](redirection/) (10%)
+ 1. [Playing with the shell](intro_shell/) (10%)
  1. [Scripting](scripting/) (60%)
- 1. Job control (0%)
  1. [Processes, or lack thereof.](processes/) (10%)
 
 TODO
@@ -39,25 +39,6 @@ TODO
 Speculative topics
 ------------------
 
- 1. Manipulating files and directories
-  * mkdir
-  * cp
-  * mv
-  * rm
-  * nano
- 1. Playing with the shell
-   * how commands work
-    * arguments
-    * options
-   * Job control
-    * suspend
-    * bg
-    * fg
-    * jobs
-    * &
-    * disown
-   * variables
-   * the prompt
  1. Permissions
  1. Users and groups
  1. Filesystems
