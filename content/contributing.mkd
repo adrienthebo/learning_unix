@@ -1,0 +1,16 @@
+---
+title: Contributing
+---
+
+Contributing
+============
+
+This project started out as some basic introductory materials with a focus
+on independent exploration. It's rapidly grown to be something significantly
+more elaborate and comprehensive. Since my resources are limited, any help is
+greatly appreciated.
+
+You'll see sections that are only marked with 'TODO', meaning that I haven't
+gotten around to them. If you feel that you could explain a concept, by all
+means send me your suggestions. Every contribution helps a lot. By itself the
+fact that someone is interested enough to contribute means the world to me.
