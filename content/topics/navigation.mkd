@@ -383,6 +383,19 @@ to find which of these files I've created. If you don't know how to do the long
 listing, check the man page or ask for help. Send me the names of the files
 I've made.
 
+The Disorganized Rest
+---------------------
+
+Now that we've walked through a couple of directories, I'm handing this off to
+you. Go forth into the followind directories and explore.
+
+ * /cat/folklore
+ * /cat/games
+ * /cat/lib
+ * /cat/man
+ * /cat/share
+ * /cat/src
+
 - - -
 
 Extra credit
