@@ -25,8 +25,13 @@ happy fun unix times to make them more happy, fun, unix, and time.
 Conventions
 -----------
 
+In order to make things clearer, I'll be adopting a few conventions.
+
 Commands that you should run will be styled like `whoami`. Parts of the
 command that you should change will be enclosed in brackets, so `id [your
 account]` would be `id finch` for finch.
 
-More conventions to follow.
+In general, if I give you some code to execute, avoid copying and pasting it.
+Writing code and typing out the symbols and words will make the code a bit less
+foreign if you really have to inspect it, so while it may take a little bit
+longer you'll gain a richer understanding of it.
