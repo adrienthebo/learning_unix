@@ -25,12 +25,12 @@ Topics
 These are in various stages of completion. If it isn't done yet, either come
 back later and pester me to finish a specific section.
 
- 1. [Navigating in the shell](navigation/) (90%)
- 1. [Manipulating Files](manipulating_files/) (10%)
- 1. [Redirection and the Tao of Unix](redirection/) (10%)
- 1. [Playing with the shell](intro_shell/) (10%)
- 1. [Scripting](scripting/) (60%)
- 1. [Processes, or lack thereof.](processes/) (10%)
+ 1. [Navigating in the shell](topics/navigation/) (90%)
+ 1. [Manipulating Files](topics/manipulating_files/) (10%)
+ 1. [Redirection and the Tao of Unix](topics/redirection/) (10%)
+ 1. [Playing with the shell](topics/intro_shell/) (10%)
+ 1. [Scripting](topics/scripting/) (60%)
+ 1. [Processes, or lack thereof.](topics/processes/) (10%)
 
 TODO
 ----
