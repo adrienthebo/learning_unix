@@ -175,17 +175,21 @@ simply access that directory instead of giving the absolute path, since it's
 shorter. Since this is relative to our current location, this would be called a
 relative path.
 
-While we're talking about relative paths, there are a couple special values: '.'
-and '..'.
+While we're talking about relative paths, there are a couple special values:
+'.', '..'. and '~'.
 
-'.' refers to the current directory, so '.' would be '/u/troll' if we
-were in that directory. This means that you could also refer to 'miley\_cyrus' as
-'./miley\_cyrus' if you were in /u/troll.
+ * '.' refers to the current directory, so '.' would be '/u/troll' if we were in
+   that directory. This means that you could also refer to 'miley\_cyrus' as
+   './miley\_cyrus' if you were in /u/troll.
 
-'..' is the parent directory, or the directory that contains the current
-directory, so '..' would be '/u' if we were in '/u/troll'.
+ * '..' is the parent directory, or the directory that contains the current
+   directory, so '..' would be '/u' if we were in '/u/troll'.
 
-TODO talk about tilde?
+ * Your home directory is fairly important, so you'll find yourself navigating
+   between it and the rest of the system. Since it's so common, there's a
+   shortcut to your home directory, '~'. You may find that paths start with '~'
+   instead of '/', which just means that they're based out of your home
+   directory.
 
 Running programs
 ----------------
