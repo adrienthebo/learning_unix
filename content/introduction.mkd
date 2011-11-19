@@ -1,5 +1,5 @@
 ---
-title: Introduction and conventions
+title: Introduction
 ---
 
 Introduction
@@ -21,8 +21,6 @@ interested in your response and want your feedback or I want to see what you've
 found. If you would be so kind, write up the things you find or work through in
 this and then send me a copy when you're done. This way, I can improve these
 happy fun unix times to make them more happy, fun, unix, and time.
-
-This site is actively under development.
 
 Conventions
 -----------
