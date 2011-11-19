@@ -42,10 +42,9 @@ to begin to list all the reasons why you would want to learn this.
 
 Todo
 
- * Why you should care
  * Who is this catered to
- * Brief history of Unix
- * Why everything is so damn hard!
+ * Why everything is so hard!
+ * Learning the language
 
 Learning Unix - it's a lie
 --------------------------
