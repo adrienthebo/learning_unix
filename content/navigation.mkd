@@ -189,9 +189,40 @@ TODO talk about tilde?
 Running programs
 ----------------
 
-TODO directly running commands
+    /
+    ...
+    ├── u
+    │   └── finch
+    │       ├── local
+    │       │   ├── bin <----- This is is where finch keeps his programs
+    │       │   │   ├── git-new-workdir
+    │       │   │   ├── git-search-tags
+    │       │   │   ├── sprunge
+    │       │   │   └── stow
+    │       │   └── lib
+    │       ├── .profile
+    │       ├── .zshrc
+    │       └── .zshenv
+    ...
+    └── bin
+        ├── bash
+        ├── cat
+        ├── cp
+        ├── date
+        ├── ls
+        └── zsh
 
-TODO commands in $PATH
+Obviously, at some point you'll want to actually *do* something. To get things
+done, you'll have to start running programs. To run a program, all you have to
+do is give the path to the file. For instance, we have
+'/u/finch/local/bin/git-new-workdir', so to run it all we do is put that
+filename in our shell and hit enter. Any other program in that directory could
+be executed, as well as anything /bin, such as '/bin/ls' and '/bin/cat'.
+
+However, typing out such lengthy paths is obviously going to get old fast, so
+there's a shortcut. There's a set of directories like /usr/bin and /bin whose
+programs you can launch without typing out the full path. That's why you can do
+`ls` instead of `/bin/ls`. We'll go into how this works at a later date.
 
 - - -
 
