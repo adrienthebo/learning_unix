@@ -5,11 +5,25 @@ title: Manipulating Files
 Manipulating Files
 ==================
 
+Now that we've covered how to get around and look at files, we probably want to
+start making our own. We'll want to do things like customize our config files,
+take notes, write shell scripts, and things like that.
+
 Commands
 --------
 
-  * mkdir
-  * cp
-  * mv
-  * rm
-  * nano
+We'll need a new set of commands to modify files and directories. Pull up the
+man page for each of these commands to get a feel for what it does. Try to find
+one interesting thing for each command.
+
+  * **nano** - A basic file editor you can use to create and edit files
+  * **rm** - remove files and directories
+  * **mkdir** - make a new directory
+  * **rmdir** - remove empty directories
+  * **cp** - copy files and directories
+  * **mv** - move and rename files and directories (sensing a trend?)
+
+Exercises
+---------
+
+TODO exercises
