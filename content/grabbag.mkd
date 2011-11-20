@@ -1,0 +1,25 @@
+---
+title: The Grab Bag
+---
+
+The Grab Bag - Curious and Wonderful Topics
+===========================================
+
+These links have no particular order, but I find them neat for some reason or
+another.
+
+ * [Magic SysRq key](http://en.wikipedia.org/wiki/Magic_SysRq_key)
+
+Pseudo-filesystems
+------------------
+
+One of the common unix ideas is that everything should be a file. This means
+that you can do extremely powerful things by doing normal read and write
+operations.
+
+The following are filesystem representations of various structures.
+
+ * [/dev](http://en.wikipedia.org/wiki/Device_file) - Not a true pseudo filesystem, but contains device nodes
+ * [/proc](http://en.wikipedia.org/wiki/Procfs) - profs, represents running processes
+ * [/sys](http://en.wikipedia.org/wiki/Sysfs) - sysfs, represents devices and drivers
+ * [/configfs](http://en.wikipedia.org/wiki/Configfs) - configfs, creating and controlling kernel objects

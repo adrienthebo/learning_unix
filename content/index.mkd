@@ -36,10 +36,6 @@ back later and pester me to finish a specific section.
  1. [Scripting](topics/scripting/) (60%)
  1. [Processes, or lack thereof.](topics/processes/) (10%)
 
-TODO
-----
-
-
 Speculative topics
 ------------------
 
@@ -59,6 +55,11 @@ Tools of the trade
  - Eventually: ssh
  - Eventually: git
  - Eventually: procmail
+
+etc
+---
+
+ * [The Grab Bag](grabbag/) - Curious and Wonderful Topics
 
 Authors/Credits
 ---------------
