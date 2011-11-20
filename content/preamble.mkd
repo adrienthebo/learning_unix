@@ -8,6 +8,9 @@ Preamble
 - - -
 "Unix is simple. It just takes a genius to understand its simplicity." – Dennis Ritchie
 
+Reasoning
+---------
+
 So, you're new to Unix. You're from a world with a mouse and a keyboard, with
 graphics, help menus, suggestions, and where you can click around and figure
 things out by looking at them. Now you're in a world of hurt, where you're
@@ -40,11 +43,33 @@ to begin to list all the reasons why you would want to learn this.
    supercomputers, and out of the top 500, A unix variant runs on nearly all of
    them.
 
-Todo
+Why Everything is So Hard!
+--------------------------
 
- * Who is this catered to
- * Why everything is so hard!
- * Learning the language
+As mentioned previously, starting out in Unix can be daunting, because of the
+complete lack of context or valid points in comparison. Unix itself isn't so
+bad, but you'll probably be starting from scratch. Don't let this bother you. If
+you've been using a different type of operating system before, such as Windows
+or OSX, you started out new in that case, and you probably managed alright. If
+you're willing to apply yourself and put in some time to start putting the
+pieces together, Unix will seem a lot less scary.
+
+One of the strange things about Unix is that it effectively is a language.
+Commands like 'ls', 'mkdir', and so forth won't make any sense until you
+understand them. The syntax and usage of commands might not make a lot of sense
+either. Once again, this is normal - you would run into these experiences if you
+were learning any type of new language. As long as you understand that there's a
+vocabulary and syntax you need to learn, you'll be fine.
+
+Who This is Catered To
+----------------------
+
+This guide is targetted at people that have some Windows experience but don't
+have a lot of time using Unix, or haven't spent a lot of time in the shell. I
+intend to throw in a lot of interesting things so that even if you have some
+experience, you should be able to work on your challenges to get a bit more
+hands on time, or see some of the really exotic stuff that's buried inside the
+systems you're using.
 
 Learning Unix - it's a lie
 --------------------------
