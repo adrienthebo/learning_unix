@@ -20,7 +20,6 @@ You should read these before you dive in.
 
  * [Introduction and conventions](introduction/)
  * [Preamble and reasoning](preamble/)
- * [Contributing](contributing/)
 
 
 Topics
@@ -53,14 +52,15 @@ Tools of the trade
 ------------------
 
  - [Vim](tools/vim/): Vim and vimtutor. Learn you some vim!
+ - [Git](tools/git/): Better living through version control and git.
  - Eventually: ssh
- - Eventually: git
  - Eventually: procmail
 
 etc
 ---
 
  * [The Grab Bag](grabbag/) - Curious and Wonderful Topics
+ * [Contributing](contributing/)
 
 Authors/Credits
 ---------------
