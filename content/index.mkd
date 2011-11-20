@@ -4,19 +4,12 @@ title: Learning Unix
 Learning Unix
 ===================
 
-Or
-
-Happy Fun Unix Time
--------------------
-
 - - -
 
 "Unix is user-friendly. It just isn't promiscuous about which users it's friendly with." – Steven King
 
 Getting Started
 ---------------
-
-You should read these before you dive in.
 
  * [Introduction and conventions](introduction/)
  * [Preamble and reasoning](preamble/)
@@ -25,28 +18,8 @@ You should read these before you dive in.
 Topics
 -----
 
-These are in various stages of completion. If it isn't done yet, either come
-back later and pester me to finish a specific section.
-
  1. [Navigating in the shell](topics/navigation/)
- 1. [Anatomy of a Command](topics/command_anatomy/) (0%)
- 1. [Manipulating Files](topics/manipulating_files/) (10%)
- 1. [Redirection and the Tao of Unix](topics/redirection/) (10%)
- 1. [Playing with the shell](topics/intro_shell/) (10%)
  1. [Scripting](topics/scripting/) (60%)
- 1. [Processes, or lack thereof.](topics/processes/) (10%)
-
-Speculative topics
-------------------
-
- 1. Permissions
- 1. Users and groups
- 1. Filesystems
- 1. Playing with ttys
- 1. Regular expressions
-
-If there's something that I haven't written about that isn't listed here and
-you would like to learn more about it, let me know.
 
 Tools of the trade
 ------------------
@@ -60,7 +33,7 @@ etc
 ---
 
  * [The Grab Bag](grabbag/) - Curious and Wonderful Topics
- * [Contributing](contributing/)
+ * [TODO](TODO/) - Pages and projects I haven't started but want to list
 
 Authors/Credits
 ---------------
@@ -71,4 +44,4 @@ Authors/Credits
 Thanks to all the lovely folks that have taken the time to read this and
 provide feedback.
 
-
+ * [Contributing](contributing/) - Wanted: your brains! (And assistance)

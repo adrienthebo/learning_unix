@@ -1,0 +1,31 @@
+---
+title: OH GOD THERE'S SO MUCH WORK
+---
+
+TODO
+====
+
+Incomplete Topics
+-----------------
+
+ 1. [Anatomy of a Command](topics/command_anatomy/) (0%)
+
+ 1. [Manipulating Files](topics/manipulating_files/) (10%)
+ 1. [Redirection and the Tao of Unix](topics/redirection/) (10%)
+ 1. [Playing with the shell](topics/intro_shell/) (10%)
+
+ 1. [Processes, or lack thereof.](topics/processes/) (10%)
+
+Speculative topics
+------------------
+
+ 1. Permissions
+ 1. Users and groups
+ 1. Filesystems
+ 1. Playing with ttys
+ 1. Regular expressions
+
+If there's something that I haven't written about that isn't listed here and
+you would like to learn more about it, let me know.
+
+
