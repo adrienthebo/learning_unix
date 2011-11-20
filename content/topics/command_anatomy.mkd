@@ -1,0 +1,11 @@
+---
+title: Anatomy of a Command
+---
+Anatomy of a Command
+====================
+
+ 1. Commands
+ 1. Arguments
+ 1. Flags
+ 1. Structure
+ 1. How Commands actually receive these
