@@ -8,10 +8,9 @@ Surviving and Navigating the Filesystem
 Introduction
 ------------
 
-This is going to be a bit of a crash course on surviving on a unix system.  To
-get started, we need to learn how to get around and understand the average unix
-system. This should run over the basics of filesystems, how to get around, run
-commands, and inspect files and programs.
+This is going to be a bit of a crash course on surviving in unix. This should
+run over the basics of filesystems, how to get around, run commands, and
+inspect files and programs.
 
 - - -
 
@@ -276,7 +275,7 @@ systems with the 'man' command. For instance, if you were to run `man man`, this
 would bring up the man page for the man command. Reading the man page for the
 man pages would be a good place to start.
 
-[manpages][http://en.wikipedia.org/wiki/Man_page]
+[manpages]: http://en.wikipedia.org/wiki/Man_page "Wikipedia: Man Page"
 
 It's important to note how man pages actually work. The man command itself
 mainly focuses on fetching and properly formatting the man page itself, but on
