@@ -36,13 +36,21 @@ etc
  * [The Grab Bag](grabbag/) - Curious and Wonderful Topics
  * [TODO](TODO/) - Pages and projects I haven't started but want to list
 
-Authors/Credits
----------------
+- - -
 
- * finch
- * nameless
+Authors
+-------
+
+ * Finch
+ * Nameless
+
+ * [Contributing](contributing/) - Wanted: your brains! (And assistance)
 
 Thanks to all the lovely folks that have taken the time to read this and
 provide feedback.
 
- * [Contributing](contributing/) - Wanted: your brains! (And assistance)
+Additional Contributions
+------------------------
+
+ * CSS ripped off from [mark.reid.name](http://mark.reid.name)
+ * Site generation done with [nanoc](http://nanoc.stoneship.org/)
