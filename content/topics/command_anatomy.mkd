@@ -183,10 +183,10 @@ gets the '--version' flag it immediately displays the version, and then exits.
 How Commands Receive Arguments
 ------------------------------
 
-You'll noticed that the distinction between options and regular arguments are a
-bit blurry. The reason for this is that there is no true distinction between the
-two. Options are a convention adopted to make commands a bit more usable, among
-other reasons.
+You'll notice that the distinction between options and regular arguments are a
+bit blurry. The reason for this is that there is no true distinction between
+the two. Options are a convention adopted to make commands a bit more usable,
+among other reasons.
 
 The way programs actually see these is as a list of values. When Facter is
 called like `facter --yaml id hostname uptime`, for instance, it gets the
