@@ -63,6 +63,7 @@ by the shebang is effectively 'fed' the script as an argument. Thus, if you
 named the previous script "hello.sh", you could run it by doing `bash hello.sh`
 or `./hello.sh`.
 
+TODO more on shebang
 
 Variables
 ---------
@@ -70,6 +71,8 @@ Variables
     #!/bin/bash
     myname=finch
     echo "Hello $myname"
+
+TODO variable assignment
 
 TODO difference between a=val and $a=val
 
@@ -83,6 +86,10 @@ Flow Control, i.e. Making Decisions
     else
       echo "True is no longer true, I'm going to sit in a corner and cry."
     fi
+
+TODO case statements
+
+TODO short circuit operators
 
 Loops, or doing the same thing really really fast
 -------------------------------------------------
@@ -102,9 +109,14 @@ Loops, or doing the same thing really really fast
       another_counter="${another_counter}a"
     end
 
-
+TODO explain looping
 
 - - -
+
+Functions
+---------
+
+TODO
 
 Extra Credit
 ------------
@@ -136,12 +148,17 @@ I have too much free time and/or I am skipping classes to write code
 
 Write a printer script.
 
+TODO specifics of printer script
+
 Then, write a runaway script.
+
+TODO specifics of runaway script
 
 This is all far too simple for me. I require monumental tasks.
 --------------------------------------------------------------
 
-PM finch. He has something evil.
+If you're reading these and haven't found anything challenging, PM me. I have
+a particularly evil challenge for those who are interested.
 
 References
 ----------
