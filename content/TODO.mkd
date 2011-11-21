@@ -8,7 +8,6 @@ TODO
 Incomplete Topics
 -----------------
 
- 1. [Anatomy of a Command](topics/command_anatomy/) (0%)
 
  1. [Manipulating Files](topics/manipulating_files/) (10%)
  1. [Redirection and the Tao of Unix](topics/redirection/) (10%)

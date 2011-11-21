@@ -4,8 +4,213 @@ title: Anatomy of a Command
 Anatomy of a Command
 ====================
 
- 1. Commands
- 1. Arguments
- 1. Flags
- 1. Structure
- 1. How Commands actually receive these
+We've been talking of running commands and passing arguments and whatnot, but
+we haven't really explained what exactly we're doing. To get a better hold on
+how commands can be used, let's run through some examples.
+
+Commands
+--------
+
+To begin with, a command is just a program somewhere on the filesystem. For
+instance, you're probably familiar with firefox - on Linux, it should be
+installed in '/usr/bin/firefox'. In fact, your desktop icon for firefox probably
+references this address itself.
+
+Modifying Commands
+------------------
+
+Programs can be written to be very flexible and versatile, so that you can
+tweak the behavior of a command very easily by changing how you call the
+command. You can pass commands what are known as *arguments* to make commands
+change their behavior.
+
+For instance, if you wanted to view the contents of
+'/cat/doc/meetings/agenda.dog', you could do `less /cat/doc/meetings/agenda.dog`
+to view the agenda. The '/cat/doc/meetings/agenda.dog' would be an *argument*
+for the 'less' command. In short, arguments are effectively anything that
+follows a command. In this case, /cat/doc/meetings/agenda.dog is the file that
+less would display, so it controls what less does.
+
+There are also a subset of arguments called *options* or *flags*. While an
+argument to less like /cat/doc/meetings/agenda.dog controls what 'less' does, an
+option would change how 'less' does things. For instance, if you did `less -K
+/cat/doc/meetings/agenda.dog`, you could hit ctrl+c to exit less instead of
+having to hit 'q'.
+
+For another example, files that are prefixed with a period, like '.profile' are
+not displayed by `ls` by default. However, we can change this behavior by using
+an option, '-a' or '--all' and run `ls --all` to display all files, hidden or
+otherwise. This also demonstrates that options may have a short form, like '-a',
+or a long form, like '--all'. They do the same thing, but one is faster to type
+while the other is more clear to read.
+
+An Example
+----------
+
+Let's play around with one of my pet programs, Facter. Facter is a command line
+program that you can use to easily display system information, or other facts.
+You can see the output by running `facter`.
+
+If you did that, you would probably get something like this:
+
+    domain => local
+    facterversion => 1.6.0
+    fqdn => dre.local
+    hardwaremodel => i386
+    hostname => dre
+    id => adrien
+    is_virtual => false
+    kernel => Darwin
+    kernelmajversion => 10.8
+    kernelrelease => 10.8.0
+    kernelversion => 10.8.0
+    macosx_productname => Mac OS X
+    macosx_productversion => 10.6.8
+    operatingsystem => Darwin
+    operatingsystemrelease => 10.8.0
+    puppetversion => 2.7.3
+    rubyversion => 1.8.7
+    swapencrypted => true
+    swapfree => 64.00M
+    swapsize => 64.00M
+    timezone => PST
+    uptime => 3:10 hours
+    uptime_days => 0
+    uptime_hours => 3
+    uptime_seconds => 11425
+    virtual => physical
+
+So this is an example of calling a command, with no arguments, no commands, just
+running `facter` and we get some useful output.
+
+Reading the man page
+--------------------
+
+If we were to open up the man page by doing `man facter`, we would see something
+like this as the usage:
+
+    USAGE:
+        facter  [-d|--debug]  [-h|--help]  [-p|--puppet]  [-v|--version] [-y|--yaml] [fact] [fact] [...]
+
+Now of course there's a lot of information packed in here, but there's no
+obvious significance to anything. Let's walk through it.
+
+Breaking Up Command Usage
+-------------------------
+
+    facter  [-d|--debug]  [-h|--help]  [-p|--puppet]  [-v|--version] [-y|--yaml] [fact] [fact] [...]
+      ^     |                                                                                      |
+      |     +--------------------------------------------------------------------------------------+
+      |                          These are the possible arguments and options
+      └ This is the command
+
+Options
+-------
+
+The following are options that Facter understands:
+
+  * **-d** or **--debug**: turns on debugging information for Facter
+  * **-h** or **--help**: displays Facter's help information
+  * **-p** or **--puppet**: loads extra facts using a different program, puppet
+  * **-v** or **--version**: shows the version of Facter that we're using
+  * **-y** or **--yaml**: changes the output of Facter to use 'yaml', or 'Yet
+    Another Markup Language'
+
+In each case, the first and second options are synonyms, so we can either put
+emphasis on brevity and use the short form, such as when we're typing a command,
+or clarity and use the long form, when we're telling someone else how to use
+Facter.
+
+In the man page, each one of these is surrounded by square brackets. This means
+that the options are, well, optional. That is, you can call Facter with or
+without them.
+
+Arguments
+---------
+
+At the end of the usage, you'll see reference to '[fact]'. This means that you
+can call Facter with additional arguments, specifically one or more facts.
+Instead of displaying all facts like we did earlier, you can only display a set
+number of facts.
+
+Examples
+--------
+
+- - -
+
+    % facter hostname id uptime
+    hostname => dre
+    id => adrien
+    uptime => 4:21 hours
+
+This is an example of me calling Facter with three arguments, 'hostname', 'id', and
+'uptime'. Facter will then only try to retrieve this information for me.
+
+- - -
+
+    % facter --debug hostname id uptime
+    Caught recursion on kernel
+    value for kernel is still nil
+    hostname => dre
+    id => adrien
+    uptime => 4:22 hours
+
+This is me calling Facter with the same arguments, but with the '--debug' option.
+This can be used to diagnose issues with Facter.
+
+- - -
+
+    facter --yaml hostname id uptime
+    ---
+    id: adrien
+    uptime: 4:24 hours
+    hostname: dre
+
+Instead of asking for debug information, this time I'm calling Facter with the
+'--yaml' option, which means that I want the output to be formatted in a certain
+way. As you see, the format's been changed somewhat markedly.
+
+- - -
+
+    % facter --version id hostname uptime
+    1.6.0
+
+Sometimes options can entirely change how a command is called. In this case I'm
+calling Facter with the '--version' option but still trying to retrieve facts.
+However, Facter can either retrieve facts or display the version, so when it
+gets the '--version' flag it immediately displays the version, and then exits.
+
+How Commands Receive Arguments
+------------------------------
+
+You'll noticed that the distinction between options and regular arguments are a
+bit blurry. The reason for this is that there is no true distinction between the
+two. Options are a convention adopted to make commands a bit more usable, among
+other reasons.
+
+The way programs actually see these is as a list of values. When Facter is
+called like `facter --yaml id hostname uptime`, for instance, it gets the
+following in a list:
+
+ * --yaml
+ * id
+ * hostname
+ * uptime
+
+It's entirely up to Facter to decide what to do with these values. In this case,
+Facter will start up, look at these options and see that it has one option and
+three arguments. It'll look at the option and see that it's supposed to return
+information as yaml, so it'll note that for when it outputs the information.
+It'll next see that it has three arguments, and so it'll take the steps needed
+to find the information to determine these facts. Finally, it'll go to output
+these facts, see that it already noted to output the facts as yaml, and then
+print the following:
+
+    ---
+    id: adrien
+    uptime: 4:24 hours
+    hostname: dre
+
+The reason we distinguish the '--yaml' option from just another agument is so
+that we could also have a fact called 'yaml' and be able to retrieve that fact,
+while not confusing it with the desired output mode.

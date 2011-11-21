@@ -19,6 +19,7 @@ Topics
 -----
 
  1. [Navigating in the shell](topics/navigation/)
+ 1. [Anatomy of a Command](topics/command_anatomy/)
  1. [Scripting](topics/scripting/) (60%)
 
 Tools of the trade
