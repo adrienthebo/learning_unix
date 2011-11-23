@@ -20,7 +20,7 @@ code, pre {
 	font-family: 'Droid Sans Mono', sans-serif;
 	color: rgb(148,38,33);
 	font-size: .95em;
-	background-color: rgb(239,236,229);
+	background-color: rgb(234,230,219);
 }
 
 pre {
@@ -128,7 +128,7 @@ a {
 	box-shadow: 1px 1px 3px rgb(130,137,152);
         -webkit-box-shadow: 1px 1px 3px rgb(130,137,152);
         -moz-box-shadow: 1px 1px 3px rgb(130,137,152);
-	background-color: rgb(238,236,230);
+	background-color: rgb(234,230,219);
 	float: right;
 	margin-left: 800px;
 	position: fixed;
