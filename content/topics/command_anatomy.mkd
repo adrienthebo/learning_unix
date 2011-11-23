@@ -125,6 +125,8 @@ In the man page, each one of these is surrounded by square brackets. This means
 that the options are, well, optional. That is, you can call Facter with or
 without them.
 
+TODO arguments for options
+
 Arguments
 ---------
 
@@ -214,3 +216,44 @@ print the following:
 The reason we distinguish the '--yaml' option from just another agument is so
 that we could also have a fact called 'yaml' and be able to retrieve that fact,
 while not confusing it with the desired output mode.
+
+Commands in Practice
+--------------------
+
+Take the following commands, figure out what they do, and report back to me.
+If you run the command, then you should probably do it on ruby or rita. If you
+do it on a non-linux platform you may get unusual results.
+
+**hint**: You read the introduction and conventions, right?
+
+- - -
+
+    % facter
+
+- - -
+
+    % facter architecture hardwaremodel
+
+- - -
+
+    % facter hostname ipaddress ipaddress_eth0 macaddress macaddress_eth0 virtual is_virtual
+
+- - -
+
+    % facter --timing
+
+- - -
+
+    % facter --timing manufacturer productname serialnumber rubyversion ps
+
+- - -
+
+    % facter --help kernel memoryfree memorytotal timezone
+
+- - -
+
+    % facter --debug kernel memoryfree --timing memorytotal --yaml timezone
+
+- - -
+
+    % facter helpimcoveredinbeeees

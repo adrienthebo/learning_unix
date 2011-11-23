@@ -31,6 +31,26 @@ Commands that you should run will be styled like `whoami`. Parts of the
 command that you should change will be enclosed in brackets, so `id [your
 account]` would be `id finch` for finch.
 
+There are going to be two styles of code blocks. One is going to be for
+code examples, like ruby, bash, or C. These should just look like code.
+Hopefully I'll add syntax highlighting to make these more visible.
+
+TODO add syntax highlighting to CSS
+
+    #!/bin/bash
+
+    echo "This would be an example of a code block, or code snippet."
+
+The other style will be the output from a shell, so something that I typed in
+and ran, and copied the commands and output here.
+
+    % echo "This would be an example of command output"
+    This would be an example of command output
+    % echo "The % is called the prompt, and it's just the input that's before where I type."
+    The % is called the prompt, and it's just the input that's before where I type.
+
+- - -
+
 In general, if I give you some code to execute, avoid copying and pasting it.
 Writing code and typing out the symbols and words will make the code a bit less
 foreign if you really have to inspect it, so while it may take a little bit

@@ -1,14 +1,21 @@
 Happy fun unix time, vim edition
-=======================
+================================
+
+> "Everyone's first vim session: ^C^C^X^X^X^XquitqQ!qwtf[esc]qwertyuiopasdfghjkl;:xwhat"
 
 Description
 -----------
 
-This happy fun unix time is extra happy, fun, and time, since I'm pointing you
-to vimtutor. Vimtutor is an introduction to the vim editor. It'll walk you
-through the basic commands and start working up towards the more advanced
-functionality.
+Vim is the descendant of one of the first editors, 'ed'. It's tremendously
+powerful, extremely versatile, supremely extendable, and once you're familiar
+with it you can get work done significantly faster. I've been using vim for over
+five years, and I still learn tricks that make me faster and more efficient.
 
-To run vimtutor, run `vimtutor` on the command line.
+To the uninitiated, vim is a horrible editor whose goal is to confuse you and
+mangle your files.  (They're actually thinking of a different editor, called
+fuv.) At some point, some kind soul realized that learning vim can be akin to
+smashing your fingers with hammers, and put together a tutorial to guide people
+through the alphabet soup that is vim. To get started, run `vimtutor` and you
+are off to the races!
 
-Eventually I'll explain some more neat features. Eventually.
+TODO talk more of vim's features? Addons? Bees?

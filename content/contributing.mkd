@@ -1,7 +1,3 @@
----
-title: Contributing
----
-
 Contributing
 ============
 
@@ -14,3 +10,8 @@ You'll see sections that are only marked with 'TODO', meaning that I haven't
 gotten around to them. If you feel that you could explain a concept, by all
 means send me your suggestions. Every contribution helps a lot. By itself the
 fact that someone is interested enough to contribute means the world to me.
+
+In addition, if you feel like you have content that you know and think should
+be distributed but I haven't mentioned it, feel free to write something up and
+pass it to me. My goal is to help out people that are new to Unix, and if you
+can further that end then we should definitely talk.
