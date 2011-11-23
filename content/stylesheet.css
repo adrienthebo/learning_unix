@@ -36,7 +36,7 @@ pre {
 
 big {
 	font-size: 2.8em;
-	letter-spacing: 1px;
+	letter-spacing: 0;
 }
 
 a {
@@ -46,11 +46,16 @@ a {
 	background-color: white;
 }
 
+#header a {
+	text-decoration: none;
+}
 
 #header h1 {
 	color: rgb(148,38,33);
 	font-family: 'Nova Flat', cursive;
 	text-shadow: 0px 1px 2px rgb(196,191,185);
+	padding-top: 0;
+	margin-top: -15px;
 }
 
 #header p {
@@ -71,18 +76,35 @@ a {
 #content {
 	line-height: 1.1em;
 	background-color: white;
-	width: 600px;
+	width:800px;
 	margin-top: -5px;
-        box-shadow: 1px 1px 3px rgb(130,137,152);
+	box-shadow: 1px 1px 3px rgb(130,137,152);
         -webkit-box-shadow: 1px 1px 3px rgb(130,137,152);
         -moz-box-shadow: 1px 1px 3px rgb(130,137,152);
 	border-bottom-right-radius: 5px;
 }
 
 #content ul, ol {
-	list-style-position: inside;
 	padding-bottom: 1em;
 	padding-left: 1.5em;
+}
+
+#content ol {
+	padding-left: 1.5em;
+}
+
+#content li {
+	padding-bottom: .4em;
+	line-height: 1.25em;
+}
+
+#content li>ul {
+	padding-bottom: 0;
+	
+}
+
+#content li>ul>li {
+	padding-bottom: 0;
 }
 
 #content h1 {
@@ -98,6 +120,7 @@ a {
 
 #content p {
 	padding-bottom: 1.5em;
+	line-height: 1.25em;
 }
 
 #sidebar {
@@ -107,7 +130,7 @@ a {
         -moz-box-shadow: 1px 1px 3px rgb(130,137,152);
 	background-color: rgb(238,236,230);
 	float: right;
-	margin-left: 600px;
+	margin-left: 800px;
 	position: fixed;
 	list-style-position: inside;
 }
