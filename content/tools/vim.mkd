@@ -19,3 +19,8 @@ through the alphabet soup that is vim. To get started, run `vimtutor` and you
 are off to the races!
 
 TODO talk more of vim's features? Addons? Bees?
+
+References
+----------
+
+ * [The vim learning curve is a myth](http://robots.thoughtbot.com/post/13164810557/the-vim-learning-curve-is-a-myth)
