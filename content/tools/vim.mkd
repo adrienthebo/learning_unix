@@ -11,12 +11,40 @@ powerful, extremely versatile, supremely extendable, and once you're familiar
 with it you can get work done significantly faster. I've been using vim for over
 five years, and I still learn tricks that make me faster and more efficient.
 
-To the uninitiated, vim is a horrible editor whose goal is to confuse you and
-mangle your files.  (They're actually thinking of a different editor, called
-fuv.) At some point, some kind soul realized that learning vim can be akin to
-smashing your fingers with hammers, and put together a tutorial to guide people
-through the alphabet soup that is vim. To get started, run `vimtutor` and you
-are off to the races!
+Vim uses some fairly advanced constructs and approaches to editing, which makes
+it incredibly powerful.  However, this power means a bit of added complexity,
+and the default controls aren't immediately intuitive. You may have used nano,
+which displays shortcuts for commonly used options on the screen, while vim
+doesn't do this. This means that if you accidentally got into vim, it made
+almost no sense. *Don't despair!* It's actually rather easy to learn vim if you
+take things incrementally, and before you know it you'll be blazing through
+files.
+
+To help overcome this initial difficulty, there's a tool you can (and should)
+run called `vimtutor`. This launches vim in an environment where it guides you
+through examples and demonstrates the features of vim in a place where you have
+immediate feedback - vim itself.
+
+Why Should You Care?
+--------------------
+
+You've got to ask, "Why should I waste my time learning some obscure commands
+just to edit files? Nano does just fine!" The response to this is coupled with
+the nature and philosophy of Unix. In Unix systems, almost everything is file,
+and easily readable. You will spend vast amounts of time in an editor, either
+editing configuration files, writing code, or modifying output files. In fact,
+your file editor is arguably one of the most important tools you have for
+interacting with your system.
+
+If we're so reliant on an editor to view and interact with the system, wouldn't
+we want the most powerful editor available to do this? The reality is that while
+nano is great for getting started because it's so simple, this simplicity means
+that you have less power and control, and so you have to spend more time getting
+simple things done. This time spent on simple things distract you from more
+important tasks. While vim is admittedly more complex, it saves you from
+spending time on tedious, mundane work so that you can focus on the real tasks
+at hand. Once you get over the initial barrier vim will be one of the tools that
+you *must* have in order to work.
 
 TODO talk more of vim's features? Addons? Bees?
 
