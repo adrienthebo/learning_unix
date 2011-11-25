@@ -16,6 +16,8 @@ document.
 
  - [Bash Programming - the Linux Documentation Project](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
 
+TODO more links that don't suck
+
 Description
 -----------
 
