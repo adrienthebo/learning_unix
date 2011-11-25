@@ -1,12 +1,10 @@
----
-title: Anatomy of a Command
----
 Anatomy of a Command
 ====================
 
 We've been talking of running commands and passing arguments and whatnot, but
 we haven't really explained what exactly we're doing. To get a better hold on
-how commands can be used, let's run through some examples.
+how commands can be used, let's run through some examples. We'll also get some
+insight into how man pages should be read, and what they mean.
 
 Commands
 --------
@@ -14,7 +12,7 @@ Commands
 To begin with, a command is just a program somewhere on the filesystem. For
 instance, you're probably familiar with firefox - on Linux, it should be
 installed in '/usr/bin/firefox'. In fact, your desktop icon for firefox probably
-references this address itself.
+references this path itself.
 
 Modifying Commands
 ------------------
@@ -53,6 +51,7 @@ You can see the output by running `facter`.
 
 If you did that, you would probably get something like this:
 
+    % facter
     domain => local
     facterversion => 1.6.0
     fqdn => dre.local
@@ -81,7 +80,7 @@ If you did that, you would probably get something like this:
     virtual => physical
 
 So this is an example of calling a command, with no arguments, no commands, just
-running `facter` and we get some useful output.
+running `facter` getting some useful output.
 
 Reading the man page
 --------------------
@@ -124,8 +123,6 @@ Facter.
 In the man page, each one of these is surrounded by square brackets. This means
 that the options are, well, optional. That is, you can call Facter with or
 without them.
-
-TODO arguments for options
 
 Arguments
 ---------
@@ -257,3 +254,123 @@ do it on a non-linux platform you may get unusual results.
 - - -
 
     % facter helpimcoveredinbeeees
+
+Required arguments
+------------------
+
+All of the previous examples used optional arguments, so you could pass any
+number of arguments and options, and while the program would alter its behavior,
+pretty much any combination of arguments and flags would do something. However,
+some commands require a set of arguments in a specific order. For instance, if
+you just run `man` by itself, all you'll get back is 'What manual page do you
+want?' so man is an example of a command that requires an argument. Other
+commands like `rm`, `cp`, `mv`, and a host of other commands all require
+instance.
+
+Let's look at a couple of examples.
+
+    NAME
+           rm - remove files or directories
+
+    SYNOPSIS
+           rm [OPTION]... FILE...
+            ^ |         | |     |
+            | +---------+ +-----+
+            |      ^         ^ You have to pass at least one file, but can pass more
+            |      |
+            |      └ You can specify zero or more options
+            |
+            └ This is the command
+
+As you can see, you can still pass `rm` any number of options, like '-r' to
+remove directories as well as files, or '-i' to make you confirm deletions, but
+you have to have at least one argument. Also, notice that 'FILE...' means one
+*or more* files.
+
+If you call `rm` without a file or the '--help' flag, you get this:
+
+    % rm                                                                                                          Thu 24 23:16
+    rm: missing operand
+    Try `rm --help' for more information.
+
+- - -
+
+Let's check out another slightly more complex example, `cp`. This command has
+multiple forms you can use it in, so we'll look at all of them.
+
+For brevity, if you see a field that's enclosed in brackets, assume it's
+optional.
+
+    NAME
+           cp - copy files and directories
+
+    SYNOPSIS
+           cp [OPTION]... [-T] SOURCE DEST
+                                 ^     ^
+                     +-----------+     |
+                     |                 |
+                     |           +-----+
+                     |           |
+              Copy this file to this exact path.
+              E.G, 'cp /u/troll/example.txt /tmp/another_example.txt' <-- will make this file
+
+           cp [OPTION]... SOURCE... DIRECTORY
+                          |       |    ^
+                          +-------+    |
+                              ^        |
+                              |        +----+
+                     +--------+             |
+                     |                      |
+              Copy this file (or more) to this directory with the same name
+              E.G, 'cp /u/troll/example.txt /tmp' will make /tmp/example.txt
+
+           cp [OPTION]... -t DIRECTORY SOURCE...
+                                ^      |        |
+                                |      +--------+
+                          +-----+          ^
+                          |                |
+                          |                +----+
+                          |                     |
+            Copy *into* this directory all of these files.
+            Yes, this form of cp is completely backwards. I never use it. Don't worry about it much.
+            E.G, 'cp -t /tmp file1 file2 file3' will make /tmp/file1, /tmp/file2, and /tmp/file3
+
+In all cases, cp requires at least two arguments - the destination, and one or
+more files. In the first form, we copy the file and rename it. In the second
+form, we copy a file into a different place with the same name. In the third
+one... I don't really care, because it's weird and I never use it. In any case
+you can pass any number of additional options, but you always have to have those
+two arguments. Other commands may have more requirements, but if you're not sure
+just read the man page.
+
+It might be worth mentioning now that this is a good example of the fallibility
+of Unix, and computers in general. People like you and I wrote these programs,
+and they were capable of making mistakes. If you see something that just seems
+backwards, counterintuitive, and unnecessary, it very well may be. Just try to
+move past it.
+
+Arguments for Options
+---------------------
+
+In addition to commands having mandatory arguments, options can also require
+arguments. A good example of this is again the cp command.
+
+           cp [OPTION]... -t DIRECTORY SOURCE...
+                           ^    ^
+                           |    |
+                  +------- +    +---------------+
+                  |                             |
+    If you have this option, you have to have this directory after it.
+
+This allows commands to be more flexible, so you can require a set of arguments,
+but tie them to options so that the arguments don't have to be specified in an
+exact order.
+
+Extra Credit
+------------
+
+TODO Argument parsing in C
+
+TODO Argument parsing in ruby?
+
+TODO Argument parsing in bash?
