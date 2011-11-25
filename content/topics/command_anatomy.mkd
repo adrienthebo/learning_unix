@@ -366,6 +366,10 @@ This allows commands to be more flexible, so you can require a set of arguments,
 but tie them to options so that the arguments don't have to be specified in an
 exact order.
 
+- - -
+
+Well, this got page got a lot longer than I originally intended.
+
 Extra Credit
 ------------
 
