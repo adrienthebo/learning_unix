@@ -298,7 +298,7 @@ If you call `rm` without a file or the '--help' flag, you get this:
 Let's check out another slightly more complex example, `cp`. This command has
 multiple forms you can use it in, so we'll look at all of them.
 
-For brevity, if you see a field that's enclosed in brackets, assume it's
+For brevity, if you see a field that's enclosed in square brackets, assume it's
 optional.
 
     NAME
