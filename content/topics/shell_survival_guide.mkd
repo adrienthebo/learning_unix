@@ -50,10 +50,14 @@ many editors to chose from, although I'm only going to list two here.
     switch to an editor that's a bit more capable than nano.  For more
     information on vim, see the [learning unix page on vim](tools/vim/).
 
+<!--
+
 In Practice
 -----------
 
 TODO exercises
+
+-->
 
 Looking for information
 -----------------------

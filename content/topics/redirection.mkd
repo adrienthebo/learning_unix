@@ -233,3 +233,7 @@ The model looks like this:
           +-|--------------- standard error (2) -------|---+
             |                                          |
             +--------------- standard out (1) ---------+
+<!--
+
+TODO examples!
+>
