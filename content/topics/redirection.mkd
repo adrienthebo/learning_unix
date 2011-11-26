@@ -39,16 +39,10 @@ fact it's very powerful.
 
 [fd]: http://en.wikipedia.org/wiki/File_descriptor "Wikipedia - File Descriptor"
 
-                                |         The operating system
-    +--------------------+      |
-    | a program          |      |       +------------+
-    |                    |      |       | a program  | <- this represents the resources that the
-    |  file descriptor 0 |      |       |            |    operating system is managing for the program
-    |  file descriptor 1 |      |       | 0  | file0 +---------+
-    |  file descriptor 2 |      |       | 1  | file1 +---------+    +-----------+
-    |  file descriptor 3 |      |       | 2  | file2 +---------+--->| hard disk |
-    +--------------------+      |       | 3  | file3 +---------+    +-----------+
-                                |       +------------+
+(If this seems like a somewhat vague explanation, that's because I've left it
+somewhat vague. A full description of this is a bit out of the scope of this
+document. If you're still curious, see the [wikipedia page on file
+descriptors][fd] if you want more information.)
 
 Standard File Descriptors
 -------------------------
