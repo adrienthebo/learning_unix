@@ -4,16 +4,257 @@ Redirection
 Description
 -----------
 
- - The tao of unix
- - Text as the lingua franca of unix
- - commands should do one small thing and do it well
- - assemble small bits of funcionality into neat things
+One of the precepts of the [Unix Philosophy][philosophy] is that programs should
+do one thing, and they should do it well. This is a fairly simple but powerful
+idea, because smaller things are easier to build, and being to assemble simple
+things into more complex structures is more flexible then having big
+unchangeable blocks of functionality.
+
+[philosophy]: http://en.wikipedia.org/wiki/Unix_philosophy "Wikipedia - Unix Philosophy"
+
+Now of course, we've seen how these small programs work alone, which is all fine
+and dandy. However, we need some way to start assembling these small programs,
+otherwise we might as well be using legos with the connectors sanded off. This
+is where redirection and pipes come in.
+
+
+About File Descriptors
+----------------------
+
+Before we get any further, we need to talk about how programs interact with the
+rest of the system. When a program wants to interact with another program or a
+file, it has to do this by requesting access to the resource through the
+operating system The operating system acts as an intermediary between different
+programs and the hardware, so that if a program does something dangerous or
+experiences an error, only that program will be affected and the rest of the
+system should remain unaffected.
+
+When a program wants to open a file, it doesn't directly access the file but
+instead gets a [file descriptor][fd]. A file descriptor is just a number as far
+as the program is concerned, but the operating system has a list of files that a
+program has open that it manages, and each one of these files has a number
+associated with it. Thus the file descriptor is a number that indirectly
+references or describes a file. The following arrangement looks something like
+this:
+
+                                |         The operating system
+    +--------------------+      |
+    | a program          |      |       +------------+
+    |                    |      |       | a program  | <- this represents the resources that the
+    |  file descriptor 0 |      |       |            |    operating system is managing for the program
+    |  file descriptor 1 |      |       | 0  | file0 ----------+
+    |  file descriptor 2 |      |       | 1  | file1 ----------+    +-----------+
+    |  file descriptor 3 |      |       | 2  | file2 ----------+--->| hard disk |
+    +--------------------+      |       | 3  | file3 ----------+    +-----------+
+               ^                |       +------------+
+               |                |             ^
+      The program only has the  |             |
+      numbers 0 through 3       |       ...but the operating system has a
+      mentioned internally...   |       table that associates a number
+                                |       with a file.
+
+When we want to read from a file, we would do
+something like "read one line of input from the file associated with file
+descriptor 5". This indirect method of working with files may seem odd, but in
+fact it's very powerful.
+
+[fd]: http://en.wikipedia.org/wiki/File_descriptor "Wikipedia - File Descriptor"
+
+(If this seems like a somewhat vague explanation, that's because I've left it
+somewhat vague. A full description of this is a bit out of the scope of this
+document. If you're still curious, see the [wikipedia page on file
+descriptors][fd] if you want more information.)
+
+Standard File Descriptors
+-------------------------
+
+So now that we more or less know how programs open files, now we can start
+talking about how we actually interact with programs. The neat thing is that
+programs handle input and output in the same exact manner that they would with
+files. That means that when you type some input into a terminal, the program
+treats it as it is reading a file, and when the program wants to return
+information to you, it acts like it is writing to a file.
+
+By default, any program automatically gets three file descriptors. The first
+one, standard in, with the file descriptor '0', is how you send the program
+input. When you type something, the program reads that in from the file
+descriptor 0.
+
+When the program wants to return information to you, it has two ways to output
+things. The first one, standard out, is associated with file descriptor 1. If
+the program has some sort of expected output, it will write it to standard
+output. If an error occurs, there exists one more file descriptor, standard
+error, with file descriptor 2. If something goes wrong, the program can write
+the information to that file descriptor.
+
+By default, standard out and standard error both go to your display. This may
+seem redundant to have two, but we'll explain how this works later.
+
+This is a picture of how the entire thing works.
+
+    +----------------+                              +---------+
+    | keyboard input |----- standard input (0) ---->| program |
+    +----------------+                              +---------+
+                                                       |   |
+     +-------------+                                   |   |
+     | the display |                                   |   |
+     +-------------+                                   |   |
+        ^       ^                                      |   |
+        |       |                                      |   |
+        |       +----------- standard output (1) ------+   |
+        |                                                  |
+        +------------------- standard error (2) -----------+
+
+- - -
 
 Writing output to a file
 --------------------------
 
+The reason that we treat normal input and output from a program as a file is
+that we can actually *redirect* the normal input or output with a file! Say you
+had some program generate some sort of information you wanted to store for
+later. Instead of copying and pasting from your terminal, you could do it
+directly. For example:
+
+    % facter uptime uptime_days uptime_hours uptime_seconds
+    uptime => 3 days
+    uptime_days => 3
+    uptime_hours => 91
+    uptime_seconds => 327656
+
+We could write the following to a file by using the '>' operator
+
+    % facter uptime uptime_days uptime_hours uptime_seconds 1> facter.output
+
+This introduces the output redirection operator. When you want to redirect some
+output, you can add `#> file` to the end of the command, where # is either 1 or
+2, depending on if you're redirecting standard out or standard error.
+
+By default, '>' will overwrite any existing file, so if you did `facter 1>
+facter.output` several times, each time it ran the old file would be removed
+and the new output would replace it. If you want to add content to the end of
+the file instead, you can use '#>>' to append output to the file instead of
+wiping the file.
+
+This is the model of things if you redirected standard out.
+
+    +----------------+                              +---------+
+    | keyboard input |----- standard input (0) ---->| program |
+    +----------------+                              +---------+
+                                                       |   |
+     +-------------+        +---------+                |   |
+     | the display |   +--->| a file! |                |   |
+     +-------------+   |    +---------+                |   |
+        ^              |                               |   |
+        |              |                               |   |
+        |              +---- standard output (1) ------+   |
+        |                                                  |
+        +------------------- standard error (2) -----------+
+
+This shows why having two file descriptors for output is really handy - we can
+capture the output of a command, but still be able to display errors to the
+screen.
+
 Reading input from a file
 -------------------------
 
-Piping information across commands
+TODO this section is somewhat anemic
+
+In the same manner that you can redirect the output of a command, you can
+redirect the input of a command. If I wanted to find all instances of 'git' in
+my history file, for instance, I could do this:
+
+    % grep git < .histfile
+    git diff
+    git add -p
+    git commit
+    git push deploy master
+
+The model looks something like this:
+
+           +---------+                              +---------+
+           | a file! |----- standard input (0) ---->| program |
+           +---------+                              +---------+
+                                                       |   |
+     +-------------+                                   |   |
+     | the display |                                   |   |
+     +-------------+                                   |   |
+        ^       ^                                      |   |
+        |       |                                      |   |
+        |       +----------- standard output (1) ------+   |
+        |                                                  |
+        +------------------- standard error (2) -----------+
+
+This isn't as common as redirecting output, because by and large if a program
+can handle reading a file that's been redirected on standard in, then it can
+also handle reading the file if it's been passed as an argument.
+
+For example:
+
+    % grep git < .histfile
+    git diff
+    git add -p
+    git commit
+    git push deploy master
+
+and
+
+    % grep git .histfile
+    git diff
+    git add -p
+    git commit
+    git push deploy master
+
+Are completely identical, as you'll notice.
+
+Piping information across programs
 ----------------------------------
+
+So now we've seen how we can connect programs to files instead of the display or
+keyboard. The really cool bit is that we can connect programs *to each other*
+pretty easily as well! This is where we start putting together all the lego
+blocks.
+
+We have another operator, '|', called the pipe operator. It works by connecting
+the standard out of one program to the standard in of another program. We can
+use this to chain commands together, so one program could generate some
+information, and other one could filter it, and another could sort it, et
+cetera. Unless otherwise specified, standard error still goes to the display, so
+if errors happen then you're certain to see them.
+
+For instance, if we wanted to wanted to find all the instances of git in my
+history, and then sort the output, I could do this:
+
+    % history | grep git | sort
+    git add -p
+    git commit
+    git diff
+    git push deploy master
+
+The model looks like this:
+
+    +----------------+                              +-----------+
+    | keyboard input |----- standard input (0) ---->| program 1 |
+    +----------------+                              +-----------+
+                                                       |   |
+     +-------------+              standard out of      |   |
+     | the display |              program one... ----->|   |
+     +-------------+                                   |   |
+        ^ ^ ^                                          |   |
+        | | |                                          |   |
+        +-|-|--------------- standard error (2) -------|---+
+          | |                                          |
+          | |                  ...is connected to the  |
+          | |                     input of program 2 ->|
+          | |                                          |
+          | |                                          v
+          | |                                       +-----------+
+          | |                                       | program 2 |
+          | |                                       +-----------+
+          | |                                          |   |
+          | |                                          |   |
+          +-|--------------- standard error (2) -------|---+
+            |                                          |
+            +--------------- standard out (1) ---------+
+
+TODO examples!

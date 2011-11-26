@@ -1,5 +1,22 @@
-Scripting, or Doing Insane Things in Rapid Order
-================================================
+Bash Scripting
+==============
+
+Introduction
+------------
+
+Bash scripting is in essence programming, and trying to write a single, concise
+document on programming is nearly impossible. There's a massive volume of
+material  to cover, and people come in from all different skill levels so it's
+difficult to address this.
+
+To help keep this document a little bit shorter, you may want to consult the
+following links. They are more comprehensive documents that really cover all the
+particulars of bash programming, and should be an excellent complement to this
+document.
+
+ - [Bash Programming - the Linux Documentation Project](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
+
+TODO more links that don't suck
 
 Description
 -----------
@@ -57,13 +74,15 @@ A Basic Example
 The Shebang
 -----------
 
-The shebang is the `#!/bin/bash` component of the previous script. It specifies
+The [shebang][shebang] is the `#!/bin/bash` component of the previous script. It specifies
 what command that the system should use to launch the script. The program listed
 by the shebang is effectively 'fed' the script as an argument. Thus, if you
 named the previous script "hello.sh", you could run it by doing `bash hello.sh`
 or `./hello.sh`.
 
 TODO more on shebang
+
+[shebang]: http://en.wikipedia.org/wiki/Shebang\_(Unix) "Wikipedia - Unix Shebang"
 
 Variables
 ---------
@@ -160,8 +179,3 @@ This is all far too simple for me. I require monumental tasks.
 If you're reading these and haven't found anything challenging, PM me. I have
 a particularly evil challenge for those who are interested.
 
-References
-----------
-
- - http://en.wikipedia.org/wiki/Shebang\_(Unix)
- - http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html

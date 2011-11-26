@@ -1,0 +1,129 @@
+Shell Survival Guide
+====================
+
+Now that we've covered how to get around the filesystem a bit and how commands
+actually work, let's get a bit more hands on. You'll need a separate set of
+tools for each general type of operating you need to do. For instance
+
+  - Creating, changing, and removing files and directories
+  - Looking for information in files
+  - Processing information once we have it
+
+This document should be more example heavy and less explanation oriented, so
+expect to be testing commands when reading this.
+
+For each new command that's introduced, open up the man page and read the
+'NAME' and 'SYNOPSIS' sections, and the beginning of the 'DESCRIPTION' sections.
+As always, the man page may make no sense, in which case just google the
+command.
+
+Basic File Manipulation
+-----------------------
+
+We'll need a new set of commands to modify files and directories. Pull up the
+man page for each of these commands to get a feel for what it does. Try to find
+one interesting thing for each command.
+
+- - -
+
+These commands are some of the basic operations you'll be used to - move, copy,
+and delete files and directories.
+
+  * **cp** - copy files and directories
+  * **mv** - move and rename files and directories (sensing a trend?)
+  * **mkdir** - make a new directory
+  * **rmdir** - remove *empty* directories
+  * **rm** - remove files and directories
+
+- - -
+
+In addition, Unix makes very heavy use of text files to configure things. In
+fact, one of the main ways that you'll be working with the system and creating
+files is through a text editor, so you'll be using an editor a *lot*. You have
+many editors to chose from, although I'm only going to list two here.
+
+  * **nano** - A basic and fairly intuitive file editor you can use to create
+    and edit files. For now, this is a good editor that will get you started and
+    working.
+  * **vim** - Otherwise known as Vi Improved, this is an extremely powerful
+    editor. It's a less intuitive than nano, but in the long run you'll want to
+    switch to an editor that's a bit more capable than nano.  For more
+    information on vim, see the [learning unix page on vim](tools/vim/).
+
+<!--
+
+In Practice
+-----------
+
+TODO exercises
+
+-->
+
+Looking for information
+-----------------------
+
+A lot of your time is going to be spent looking for things. Since the average
+system has gigabytes of programs, configuration files, and other information,
+you'll need to be able to pull this information out of the system so you can
+work with it.
+
+Files
+
+  * **grep**
+  * **du**
+  * **df**
+
+  * **locate**
+  * **find**
+  * **which**
+
+Inspecting files
+
+  * **ls**
+  * **file**
+
+People
+
+  * **who**
+  * **finger**
+  * **id**
+
+Processing information
+----------------------
+
+Once you actually have the information that you need, you may need to modify it
+so that it's more useful to you.
+
+  * **grep** - grep has been mentioned already, but it's good for both finding
+    and manipulating information.
+  * **wc**
+  * **sort**
+  * **uniq**
+  * **tr**
+  * **head**
+  * **tail**
+
+There are a couple of tools that are significantly more complex than the above
+listed programs. Using these require more knowledge than just a quick scan of
+the man page, so they're worth investigating on their own. For now don't worry
+too much about them, but know that if you need to do some fairly complex changes
+to some data, you may want to look here.
+
+  * **sed** - `ed` was one of the first editors, and sed is a programmatic
+    version of this. That is, sed is designed to run a specified set of commands
+    on its input. For more information see [the sed FAQ][sed].
+  * **awk** - awk is both a tool and a programming language for that tool that
+    is designed to process text. See the [awk book][awk] for more information.
+  * **ruby** - Ruby is a distant descendant of awk, and supports a surprising
+    proportion of operations awk does, but is much more readable. See the [tools
+    page on ruby][ruby] for more information.
+
+[sed]: http://sed.sourceforge.net/sedfaq.html "The sed FAQ"
+[awk]: http://en.wikibooks.org/wiki/AWK "Wikibooks - awk"
+[ruby]: ../../tools/ruby/ "Learning Unix: Ruby"
+
+Intermediate File Manipulation
+------------------------------
+
+  * **tar**
+  * **gzip**

@@ -82,9 +82,3 @@ you'll never encounter them. No, seriously. The Unix flavors that are real
 Unixes, they're scary. While I won't be addressing all the different types of
 Unix out there, hopefully I'll be explaining the concepts that you'll see on
 the more modern and common unix variants.
-
-
-References
-----------
-
- 1. [Wikipedia: Unix Philosophy](http://en.wikipedia.org/wiki/Unix_philosophy)

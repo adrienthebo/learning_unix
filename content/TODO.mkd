@@ -9,8 +9,6 @@ Incomplete Topics
 -----------------
 
 
- 1. [Manipulating Files](topics/manipulating_files/) (10%)
- 1. [Redirection and the Tao of Unix](topics/redirection/) (10%)
  1. [Playing with the shell](topics/intro_shell/) (10%)
 
  1. [Processes, or lack thereof.](topics/processes/) (10%)
