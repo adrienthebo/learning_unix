@@ -1,7 +1,3 @@
----
-title: Manipulating Files
----
-
 Manipulating Files
 ==================
 
@@ -29,18 +25,17 @@ and delete files and directories.
 
 - - -
 
-In addition, Unix makes very heavy use of text files to configure things.
-Because of this, you'll be spending a lot of time in a text editor.
+In addition, Unix makes very heavy use of text files to configure things. In
+fact, one of the main ways that you'll be working with the system and creating
+files is through a text editor, so you'll be using an editor a *lot*.
 
-  * **nano** - A basic file editor you can use to create and edit files. For
-    now, this is a good editor that will get you started and working.
-  * **vim** - Otherwise known as Vi Improved, this is an extremely powerful and
-    complex editor.  It vaguely resembles a chainsaw; if you know what you're
-    doing you can do a lot of work very quickly, but if you're not familiar you
-    may lose fingers.  For more information on vim, see the [learning unix page
-    on vim](../../tools/vim/).
-
-TODO FIX THIS URL
+  * **nano** - A basic and fairly intuitive file editor you can use to create
+    and edit files. For now, this is a good editor that will get you started and
+    working.
+  * **vim** - Otherwise known as Vi Improved, this is an extremely powerful
+    editor. It's a less intuitive than nano, but in the long run you'll want to
+    switch to an editor that's a bit more capable than nano.  For more
+    information on vim, see the [learning unix page on vim](tools/vim/).
 
 Exercises
 ---------
