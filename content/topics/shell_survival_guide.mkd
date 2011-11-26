@@ -1,12 +1,20 @@
-Manipulating Files
-==================
+Shell Survival Guide
+====================
+
+Now that we've covered how to get around the filesystem a bit and how commands
+actually work, let's get a bit more hands on. You'll need a separate set of
+tools for each general type of operating you need to do. For instance
+
+  - Creating, changing, and removing files and directories
+  - Looking for information in files
+  - Processing information once we have it
 
 Now that we've covered how to get around and look at files, we probably want to
 start making our own. We'll want to do things like customize our config files,
 take notes, write shell scripts, and things like that.
 
-Commands
---------
+Basic File Manipulation
+-----------------------
 
 We'll need a new set of commands to modify files and directories. Pull up the
 man page for each of these commands to get a feel for what it does. Try to find
@@ -37,7 +45,7 @@ files is through a text editor, so you'll be using an editor a *lot*.
     switch to an editor that's a bit more capable than nano.  For more
     information on vim, see the [learning unix page on vim](tools/vim/).
 
-Exercises
----------
+In Practice
+-----------
 
 TODO exercises
