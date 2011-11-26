@@ -224,7 +224,7 @@ The model looks like this:
           | |                  ...is connected to the  |
           | |                     input of program 2 ->|
           | |                                          |
-          | |                                          |
+          | |                                          v
           | |                                       +-----------+
           | |                                       | program 2 |
           | |                                       +-----------+
