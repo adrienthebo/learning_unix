@@ -40,14 +40,11 @@ Authors
 
  * Finch
  * Nameless
+ * Basil - site design, CSS, and rockin favicon
 
  * [Contributing](contributing/) - Wanted: your brains! (And assistance)
 
 Thanks to all the lovely folks that have taken the time to read this and
 provide feedback.
 
-Additional Contributions
-------------------------
-
- * CSS ripped off from [mark.reid.name](http://mark.reid.name)
  * Site generation done with [nanoc](http://nanoc.stoneship.org/)
