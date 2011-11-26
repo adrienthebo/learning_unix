@@ -8,9 +8,7 @@ Playing With the Shell
 Topics
 ------
 
- * how commands work
-  * arguments
-  * options
+ * how commands get executed
  * Job control
   * suspend
   * bg
