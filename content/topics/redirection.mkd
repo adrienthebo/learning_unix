@@ -133,7 +133,7 @@ output, you can add `#> file` to the end of the command, where # is either 1 or
 By default, '>' will overwrite any existing file, so if you did `facter 1>
 facter.output` several times, each time it ran the old file would be removed
 and the new output would replace it. If you want to add content to the end of
-the file instead, you can use '#>>' to append output to the file instead of
+the file instead, you can use `#>>` to append output to the file instead of
 wiping the file.
 
 This is the model of things if you redirected standard out.
