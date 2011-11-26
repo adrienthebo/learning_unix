@@ -31,9 +31,30 @@ system should remain unaffected.
 
 When a program wants to open a file, it doesn't directly access the file but
 instead gets a [file descriptor][fd]. A file descriptor is just a number as far
-as the program is concerned, but the number essentially 'describes' a file,
-hence the name 'file descriptor'.  When we want to read from this file, we would
-do something like "read one line of input from the file associated with file
+as the program is concerned, but the operating system has a list of files that a
+program has open that it manages, and each one of these files has a number
+associated with it. Thus the file descriptor is a number that indirectly
+references or describes a file. The following arrangement looks something like
+this:
+
+                                |         The operating system
+    +--------------------+      |
+    | a program          |      |       +------------+
+    |                    |      |       | a program  | <- this represents the resources that the
+    |  file descriptor 0 |      |       |            |    operating system is managing for the program
+    |  file descriptor 1 |      |       | 0  | file0 ----------+
+    |  file descriptor 2 |      |       | 1  | file1 ----------+    +-----------+
+    |  file descriptor 3 |      |       | 2  | file2 ----------+--->| hard disk |
+    +--------------------+      |       | 3  | file3 ----------+    +-----------+
+               ^                |       +------------+
+               |                |             ^
+      The program only has the  |             |
+      numbers 0 through 3       |       ...but the operating system has a
+      mentioned internally...   |       table that associates a number
+                                |       with a file.
+
+When we want to read from a file, we would do
+something like "read one line of input from the file associated with file
 descriptor 5". This indirect method of working with files may seem odd, but in
 fact it's very powerful.
 
@@ -137,6 +158,8 @@ screen.
 Reading input from a file
 -------------------------
 
+TODO this section is somewhat anemic
+
 In the same manner that you can redirect the output of a command, you can
 redirect the input of a command. If I wanted to find all instances of 'git' in
 my history file, for instance, I could do this:
@@ -233,7 +256,5 @@ The model looks like this:
           +-|--------------- standard error (2) -------|---+
             |                                          |
             +--------------- standard out (1) ---------+
-<!--
 
 TODO examples!
->
