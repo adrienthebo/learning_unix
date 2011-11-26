@@ -53,7 +53,7 @@ fact it's very powerful.
 Standard File Descriptors
 -------------------------
 
-So now that we more or less know how files open programs, now we can start
+So now that we more or less know how programs open files, now we can start
 talking about how we actually interact with programs. The neat thing is that
 programs handle input and output in the same exact manner that they would with
 files. That means that when you type some input into a terminal, the program
@@ -63,7 +63,7 @@ information to you, it acts like it is writing to a file.
 By default, any program automatically gets three file descriptors. The first
 one, standard in, with the file descriptor '0', is how you send the program
 input. When you type something, the program reads that in from the file
-descriptor 0. 
+descriptor 0.
 
 When the program wants to return information to you, it has two ways to output
 things. The first one, standard out, is associated with file descriptor 1. If
@@ -136,12 +136,28 @@ This is the model of things if you redirected standard out.
         |                                                  |
         +------------------- standard error (2) -----------+
 
+This shows why having two file descriptors for output is really handy - we can
+capture the output of a command, but still be able to display errors to the
+screen.
+
 Reading input from a file
 -------------------------
 
-            +--------+                              +---------+
-            |a file! |----- standard input (0) ---->| program |
-            +--------+                              +---------+
+In the same manner that you can redirect the output of a command, you can
+redirect the input of a command. If I wanted to find all instances of 'git' in
+my history file, for instance, I could do this:
+
+    % grep git < .histfile
+    git diff
+    git add -p
+    git commit
+    git push deploy master
+
+The model looks something like this:
+
+           +---------+                              +---------+
+           | a file! |----- standard input (0) ---->| program |
+           +---------+                              +---------+
                                                        |   |
      +-------------+                                   |   |
      | the display |                                   |   |
@@ -152,7 +168,74 @@ Reading input from a file
         |                                                  |
         +------------------- standard error (2) -----------+
 
-Piping information across commands
+This isn't as common as redirecting output, because by and large if a program
+can handle reading a file that's been redirected on standard in, then it can
+also handle reading the file if it's been passed as an argument.
+
+For example:
+
+    % grep git < .histfile
+    git diff
+    git add -p
+    git commit
+    git push deploy master
+
+and
+
+    % grep git .histfile
+    git diff
+    git add -p
+    git commit
+    git push deploy master
+
+Are completely identical, as you'll notice.
+
+Piping information across programs
 ----------------------------------
 
- - Text as the lingua franca of unix
+So now we've seen how we can connect programs to files instead of the display or
+keyboard. The really cool bit is that we can connect programs *to each other*
+pretty easily as well! This is where we start putting together all the lego
+blocks.
+
+We have another operator, '|', called the pipe operator. It works by connecting
+the standard out of one program to the standard in of another program. We can
+use this to chain commands together, so one program could generate some
+information, and other one could filter it, and another could sort it, et
+cetera. Unless otherwise specified, standard error still goes to the display, so
+if errors happen then you're certain to see them.
+
+For instance, if we wanted to wanted to find all the instances of git in my
+history, and then sort the output, I could do this:
+
+    % history | grep git | sort
+    git add -p
+    git commit
+    git diff
+    git push deploy master
+
+The model looks like this:
+
+    +----------------+                              +-----------+
+    | keyboard input |----- standard input (0) ---->| program 1 |
+    +----------------+                              +-----------+
+                                                       |   |
+     +-------------+              standard out of      |   |
+     | the display |              program one... ----->|   |
+     +-------------+                                   |   |
+        ^ ^ ^                                          |   |
+        | | |                                          |   |
+        +-|-|--------------- standard error (2) -------|---+
+          | |                                          |
+          | |                  ...is connected to the  |
+          | |                     input of program 2 ->|
+          | |                                          |
+          | |                                          |
+          | |                                       +-----------+
+          | |                                       | program 2 |
+          | |                                       +-----------+
+          | |                                          |   |
+          | |                                          |   |
+          +-|--------------- standard error (2) -------|---+
+            |                                          |
+            +--------------- standard out (1) ---------+
