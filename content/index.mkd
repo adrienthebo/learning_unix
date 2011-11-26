@@ -17,6 +17,7 @@ Topics
 
  1. [Navigating in the shell](topics/navigation/)
  1. [Anatomy of a Command](topics/command_anatomy/)
+ 1. [Redirection and the Tao of Unix](topics/redirection/)
  1. [Shell Survival Guide](topics/shell_survival_guide/)
  1. [Scripting](topics/scripting/) (60%)
 
