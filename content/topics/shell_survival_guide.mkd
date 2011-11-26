@@ -64,6 +64,7 @@ you'll need to be able to pull this information out of the system so you can
 work with it.
 
 Files
+
   * **grep**
   * **du**
   * **df**
@@ -105,7 +106,8 @@ too much about them, but know that if you need to do some fairly complex changes
 to some data, you may want to look here.
 
   * **sed** - `ed` was one of the first editors, and sed is a programmatic
-    version of this. For more information see [the sed FAQ][sed]
+    version of this. That is, sed is designed to run a specified set of commands
+    on its input. For more information see [the sed FAQ][sed].
   * **awk** - awk is both a tool and a programming language for that tool that
     is designed to process text. See the [awk book][awk] for more information.
   * **ruby** - Ruby is a distant descendant of awk, and supports a surprising
