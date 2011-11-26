@@ -1,6 +1,3 @@
-Learning Unix
-===================
-
 - - -
 
 > "Unix is user-friendly. It just isn't promiscuous about which users it's friendly with." – Steven King
