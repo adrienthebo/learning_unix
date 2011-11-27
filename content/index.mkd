@@ -11,11 +11,16 @@ Getting Started
 Topics
 -----
 
- 1. [Navigating in the shell](topics/navigation/)
- 1. [Anatomy of a Command](topics/command_anatomy/)
- 1. [Redirection and the Tao of Unix](topics/redirection/)
- 1. [Shell Survival Guide](topics/shell_survival_guide/)
- 1. [Scripting](topics/scripting/) (60%)
+ 1. [Navigating in the shell](topics/navigation/) - An introduction to the
+    shell, filesystems and navigating, running commands, and getting around.
+ 1. [Anatomy of a Command](topics/command_anatomy/) - Breaks down how commands
+    can be used and how man pages describe commands.
+ 1. [Redirection and the Tao of Unix](topics/redirection/) - Covers redirection
+    and pipes, and how you can assemble commands
+ 1. [Shell Survival Guide](topics/shell_survival_guide/) - Covers a basic set of
+    commands to help you get work done in the shell.
+ 1. [Scripting](topics/scripting/) - A brief introduction to automating work
+    with scripts.
 
 Tools of the trade
 ------------------
