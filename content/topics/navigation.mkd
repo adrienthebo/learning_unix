@@ -164,31 +164,31 @@ Paths
     ...
 
 We call the location of a file in the filesystem the 'path' to the file. For
-instance, the path to the home directory for the miley\_cyrus directory in
-troll's homedir would be '/u/troll/miley\_cyrus'. This would be also called an
-absolute path, because the entire path is given from '/'.
+instance, the path to the home directory for the `miley_cyrus` directory in
+troll's homedir would be `/u/troll/miley_cyrus`. This would be also called an
+absolute path, because the entire path is given from `/`.
 
 In contrast, if we were in troll's home directory, the path to that same
-directory would just be 'miley\_cyrus'. Since we're already in '/u/troll' we can
+directory would just be `miley_cyrus`. Since we're already in `/u/troll` we can
 simply access that directory instead of giving the absolute path, since it's
 shorter. Since this is relative to our current location, this would be called a
 relative path.
 
 While we're talking about relative paths, there are a couple special values:
-'.', '..'. and '~'.
+`'.'`, `'..'`. and `'~'`.
 
- * '.' refers to the current directory, so '.' would be '/u/troll' if we were in
-   that directory. This means that you could also refer to 'miley\_cyrus' as
-   './miley\_cyrus' if you were in /u/troll.
+ * `'.'` refers to the current directory, so `.` would be `/u/troll` if we were in
+   that directory. This means that you could also refer to `miley_cyrus` as
+   `./miley_cyrus` if you were in `/u/troll`.
 
- * '..' is the parent directory, or the directory that contains the current
-   directory, so '..' would be '/u' if we were in '/u/troll'.
+ * `'..'` is the parent directory, or the directory that contains the current
+   directory, so `..` would be `/u` if we were in `/u/troll`.
 
  * Your home directory is fairly important, so you'll find yourself navigating
    between it and the rest of the system. Since it's so common, there's a
-   shortcut to your home directory, '~'. You may find that paths start with '~'
-   instead of '/', which just means that they're based out of your home
-   directory.
+   shortcut to your home directory, `'~'`. You may find that paths start with `~`
+   instead of `/`, which just means that they're based out of your home
+   directory. For instance, `/u/troll` would be referred to as `~`.
 
 Running programs
 ----------------
@@ -219,9 +219,9 @@ Running programs
 Obviously, at some point you'll want to actually *do* something. To get things
 done, you'll have to start running programs. To run a program, all you have to
 do is give the path to the file. For instance, we have
-'/u/finch/local/bin/git-new-workdir', so to run it all we do is put that
+`/u/finch/local/bin/git-new-workdir`, so to run it all we do is put that
 filename in our shell and hit enter. Any other program in that directory could
-be executed, as well as anything /bin, such as '/bin/ls' and '/bin/cat'.
+be executed, as well as anything /bin, such as `/bin/ls` and `/bin/cat`.
 
 However, typing out such lengthy paths is obviously going to get old fast, so
 there's a shortcut. There's a set of directories like /usr/bin and /bin whose
@@ -279,9 +279,9 @@ man pages would be a good place to start.
 
 It's important to note how man pages actually work. The man command itself
 mainly focuses on fetching and properly formatting the man page itself, but on
-linux systems 'man' would then hand the document over to a different command,
-'less' to actually show it. Less is what is known as a 'pager', so given a very
-long document 'less' will allow you to scroll through the document a page on the
+linux systems `man` would then hand the document over to a different command,
+`less` to actually show it. Less is what is known as a 'pager', so given a very
+long document less will allow you to scroll through the document a page on the
 time.
 
 There are a few points to note about less:
@@ -307,7 +307,7 @@ Commands to Know
 ----------------
 
 Before you ride into battle, know your weapons.  Open the man page for each one
-of the commands by doing "man command"; for instance "man ls" will bring up the
+of the commands by doing `man [command]`; for instance `man ls` will bring up the
 man page for ls. Read a bit; man pages can be extremely dense, jargon filled,
 and unclear so if you lose interest, move on.  Try to read a bit of the
 description at the least.
