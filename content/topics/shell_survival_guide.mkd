@@ -50,14 +50,10 @@ many editors to chose from, although I'm only going to list two here.
     switch to an editor that's a bit more capable than nano, such as vim. For more
     information on vim, see the [learning unix page on vim](../../tools/vim/).
 
-<!--
-
 In Practice
 -----------
 
 TODO exercises
-
--->
 
 Looking for information
 -----------------------
@@ -67,26 +63,26 @@ system has gigabytes of programs, configuration files, and other information,
 you'll need to be able to pull this information out of the system so you can
 work with it.
 
-Files
+### Finding Files
 
-  * **grep**
-  * **du**
-  * **df**
+  * **locate** - does fast lookups of file names on the system
+  * **find** - does a slower but more precise and tunable search for files
+  * **which** - Returns the full path for a given program name
+  * **grep** search files by their content
 
-  * **locate**
-  * **find**
-  * **which**
+### Inspecting files
 
-Inspecting files
+  * **ls** - ls is a very handy tool for getting information like the owner,
+    the size, time created, and other information about a file
+  * **file** - determine the type of file
+  * **du** - disk usage, shows how much disk space files and directories consume
+  * **df** - displays disk space for hard disks
 
-  * **ls**
-  * **file**
+### People
 
-People
-
-  * **who**
-  * **finger**
-  * **id**
+  * **who** - displays a list of users that are actively logged on
+  * **finger** - shows user information for a user, like fille
+  * **id** - provides access information for a user, like numeric uid and groups
 
 Processing information
 ----------------------
