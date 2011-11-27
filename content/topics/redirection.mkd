@@ -42,10 +42,10 @@ this:
     | a program          |      |       +------------+
     |                    |      |       | a program  | <- this represents the resources that the
     |  file descriptor 0 |      |       |            |    operating system is managing for the program
-    |  file descriptor 1 |      |       | 0  | file0 ----------+
-    |  file descriptor 2 |      |       | 1  | file1 ----------+    +-----------+
-    |  file descriptor 3 |      |       | 2  | file2 ----------+--->| hard disk |
-    +--------------------+      |       | 3  | file3 ----------+    +-----------+
+    |  file descriptor 1 |      |       | 0  | file0 --------------> +-----------+
+    |  file descriptor 2 |      |       | 1  | file1 --------------> | hard disk |
+    |  file descriptor 3 |      |       | 2  | file2 --------------> |           |
+    +--------------------+      |       | 3  | file3 --------------> +-----------+
                ^                |       +------------+
                |                |             ^
       The program only has the  |             |
@@ -78,14 +78,16 @@ information to you, it acts like it is writing to a file.
 By default, any program automatically gets three file descriptors. The first
 one, standard in, with the file descriptor '0', is how you send the program
 input. When you type something, the program reads that in from the file
-descriptor 0.
+descriptor 0. Standard in is also called **stdin**. (Get the sense that Unix
+folk are lazy typists?)
 
 When the program wants to return information to you, it has two ways to output
 things. The first one, standard out, is associated with file descriptor 1. If
 the program has some sort of expected output, it will write it to standard
 output. If an error occurs, there exists one more file descriptor, standard
 error, with file descriptor 2. If something goes wrong, the program can write
-the information to that file descriptor.
+the information to that file descriptor. Standard out and standard error are
+also called stdout and stderr, respectively.
 
 By default, standard out and standard error both go to your display. This may
 seem redundant to have two, but we'll explain how this works later.
@@ -157,8 +159,6 @@ screen.
 
 Reading input from a file
 -------------------------
-
-TODO this section is somewhat anemic
 
 In the same manner that you can redirect the output of a command, you can
 redirect the input of a command. If I wanted to find all instances of 'git' in
@@ -256,5 +256,20 @@ The model looks like this:
           +-|--------------- standard error (2) -------|---+
             |                                          |
             +--------------- standard out (1) ---------+
+
+- - -
+
+In practice
+-----------
+
+You'll see that a common idiom for a command that produces a lot of output on stderr is this:
+
+    find / 2>/dev/null
+
+What is /dev/null? What is the `2>/dev/null` component doing?
+
+- - -
+
+What do you think `facter | tr '[a-z]' '[A-Z]'` does? (Feel free to run it.)
 
 TODO examples!
