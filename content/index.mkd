@@ -35,6 +35,7 @@ etc
 ---
 
  * [The Grab Bag](grabbag/) - Curious and Wonderful Topics
+ * [Challenges](challenges/) - For the bold, intrepid, and possibly masochistic.
  * [TODO](TODO/) - Pages and projects I haven't started but want to list
 
 - - -
