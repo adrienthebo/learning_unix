@@ -23,3 +23,13 @@ The following are filesystem representations of various structures.
  * [/proc](http://en.wikipedia.org/wiki/Procfs) - profs, represents running processes
  * [/sys](http://en.wikipedia.org/wiki/Sysfs) - sysfs, represents devices and drivers
  * [/configfs](http://en.wikipedia.org/wiki/Configfs) - configfs, creating and controlling kernel objects
+
+Coding
+------
+
+Want to learn a new language, or like solving math problems? Check out [Project
+Euler][pe]. It's a series of math problems that start simple, and grow in
+complexity. It's a great way to learn the ins and outs of a language, and test
+your reasoning and logic chops.
+
+[pe]: http://projecteuler.net/ "Project Euler"

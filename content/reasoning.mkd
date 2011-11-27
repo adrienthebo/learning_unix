@@ -5,7 +5,7 @@ title: Reasoning
 Reasoning - an aimless monologue
 ================================
 
-"Unix is simple. It just takes a genius to understand its simplicity." – Dennis Ritchie
+> "Unix is simple. It just takes a genius to understand its simplicity." – Dennis Ritchie
 
 - - -
 
