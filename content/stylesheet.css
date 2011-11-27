@@ -168,3 +168,14 @@ a:hover#home {
 #footer {
 	clear: both;
 }
+
+blockquote {
+	padding: 0 2.8em;
+	line-height: 1.714em;
+}
+
+blockquote p { 
+	margin: 1.714em 0;
+	color: rgb(128 0 256);
+	font-size: 0.875em;
+}
