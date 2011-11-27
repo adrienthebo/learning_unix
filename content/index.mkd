@@ -6,8 +6,7 @@ Getting Started
 ---------------
 
  * [Introduction and conventions](introduction/)
- * [Preamble and reasoning](preamble/)
-
+ * [Reasoning/motivation](reasoning/)
 
 Topics
 -----

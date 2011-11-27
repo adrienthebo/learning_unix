@@ -1,15 +1,13 @@
 ---
-title: Preamble
+title: Reasoning
 ---
 
-Preamble
-========
+Reasoning - an aimless monologue
+================================
 
-- - -
 "Unix is simple. It just takes a genius to understand its simplicity." – Dennis Ritchie
 
-Reasoning
----------
+- - -
 
 So, you're new to Unix. You're from a world with a mouse and a keyboard, with
 graphics, help menus, suggestions, and where you can click around and figure
