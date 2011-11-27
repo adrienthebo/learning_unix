@@ -92,12 +92,16 @@ so that it's more useful to you.
 
   * **grep** - grep has been mentioned already, but it's good for both finding
     and manipulating information.
-  * **wc**
-  * **sort**
-  * **uniq**
-  * **tr**
-  * **head**
-  * **tail**
+  * **wc** - word count: list the lines, characters, and sizes of files
+  * **sort** - sort files, both [asciibetical][asciibetical] and numerically
+  * **uniq** - remove duplicated lines in a file that are one after the other
+  * **tr** - transliterate, or substitute one set of characters for another
+  * **head** - returns the first part of a file
+  * **tail** - returns the last part of a file
+
+[asciibetical]: http://www.pcmag.com/encyclopedia_term/0,2542,t=ASCIIbetical&i=38025,00.asp "PC Magazine - ASCIIbetical order"
+
+- - -
 
 There are a couple of tools that are significantly more complex than the above
 listed programs. Using these require more knowledge than just a quick scan of
