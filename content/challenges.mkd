@@ -24,7 +24,7 @@ Snipe Hunting
 
 There is a random process owned by finch somewhere on a cat accessible machine
 that writes a file to /tmp. It opens it, waits 5 minutes, writes something to
-it, then delete it. Find the contents of this file.
+it, then deletes it. Find the contents of this file.
 
 If you work on this, contact finch first to make sure it's set up.
 
