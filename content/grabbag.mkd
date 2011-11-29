@@ -8,7 +8,7 @@ The Grab Bag - Curious and Wonderful Topics
 These links have no particular order, but I find them neat for some reason or
 another.
 
- * [Magic SysRq key](http://en.wikipedia.org/wiki/Magic_SysRq_key) <-- Linux has magic! Seriously! Also, you can learn what the SysRq key is for!
+ * [Magic SysRq key](http://en.wikipedia.org/wiki/Magic_SysRq_key) Linux has magic! Seriously! Also, you can learn what the SysRq key is for!
 
 Pseudo-filesystems
 ------------------
@@ -40,4 +40,5 @@ Security, or lack thereof
 **Warning**: the following can be used for evil. Always be ethical in your work.
 [Seriously](http://en.wikipedia.org/wiki/Mitnick#Arrest.2C_conviction.2C_and_incarceration).
 
+  * [Ethical Hacking(pdf)](http://pdf.textfiles.com/security/palmer.pdf)
   * [Exploit Exercises](http://exploit-exercises.com/protostar) - an introduction to linux memory corruption.
