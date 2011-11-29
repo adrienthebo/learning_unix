@@ -28,6 +28,7 @@ Tools of the trade
  - [Vim](tools/vim/): Vim and vimtutor. Learn you some vim!
  - [Git](tools/git/): Better living through version control and git.
  - [Ruby](tools/ruby/): Ruby - because programming should be fun.
+ - [GPG](tools/gpg/): Gnu Privacy Guard - just because you're paranoid doesn't mean they're not out to get you.
  - Eventually: ssh
  - Eventually: procmail
 
