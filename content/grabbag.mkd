@@ -33,3 +33,11 @@ complexity. It's a great way to learn the ins and outs of a language, and test
 your reasoning and logic chops.
 
 [pe]: http://projecteuler.net/ "Project Euler"
+
+Security, or lack thereof
+-------------------------
+
+**Warning**: the following can be used for evil. Always be ethical in your work.
+[Seriously](http://en.wikipedia.org/wiki/Mitnick#Arrest.2C_conviction.2C_and_incarceration).
+
+  * [Exploit Exercises](http://exploit-exercises.com/protostar) - an introduction to linux memory corruption.
