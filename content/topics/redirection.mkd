@@ -272,4 +272,17 @@ What is /dev/null? What is the `2>/dev/null` component doing?
 
 What do you think `facter | tr '[a-z]' '[A-Z]'` does? (Feel free to run it.)
 
+
+
 TODO examples!
+
+Extra Credit
+------------
+
+When I need a new password, I'll do something like this:
+
+    % tr -cd '[:alnum:]' < /dev/urandom | head -c 10 | xargs printf "%s\n"
+
+Break this command into the component pieces. What am I doing here?
+
+**hint**: read the man pages of all of the commands first.
