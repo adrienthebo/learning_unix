@@ -19,3 +19,5 @@ Topics
  * variables
  * the prompt
  * tab completion
+ * backquotes
+ * shell builtins
