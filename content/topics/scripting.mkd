@@ -54,7 +54,8 @@ on these commands. Go do so now. I'll wait.
 
 If you didn't look them up I will eat your face.
 
-### An aside - making files executable
+A Tangent - making files executable
+-----------------------------------
 
 In windows, a file is executable depending on the name. For instance, if a file
 was named 'program.exe' you could run it, while if you renamed the file to
@@ -165,11 +166,31 @@ you like.
 
 - - -
 
+You can also do some more complex things when constructing variables.
+
+### Interpolation
+
+    #!/bin/bash
+    one="first variable"
+    two="second variable"
+    onetwo="This is the wrong variable"
+
+    # I want to print "first variabletwo"
+    echo "$onetwo" # What will this be?
+
+    echo "${one}two" # The braces disambiguate what variable we want
+
 {::comment}
 TODO difference between a=val and $a=val
 TODO string concatenation
 TODO parameter expansion
 {:/comment}
+
+These brace surrounded strings are what's known as [parameter
+expansion][expansion], and The full explanation for these brace they're how you
+do more complex manipulation of variables.
+
+[expansion]: http://wiki.bash-hackers.org/syntax/pe "Bash parameter expansion"
 
 Flow Control and Making Decisions
 ---------------------------------
