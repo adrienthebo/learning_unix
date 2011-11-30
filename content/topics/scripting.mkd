@@ -166,6 +166,7 @@ you like.
 {::comment}
 TODO difference between a=val and $a=val
 TODO string concatenation
+TODO parameter expansion
 {:/comment}
 
 Flow Control, i.e. Making Decisions
@@ -175,9 +176,21 @@ One of the things you're going to have to do in more advanced scripts is make
 decisions in your code. If you do the same thing every single time, that's a
 fairly boring script, so let's make something more advanced.
 
-The way scripts make decision is based on conditionals.
+The way scripts make decision is based on conditionals. There are three main
+types of conditionals:
+
+  - if statements
+  - case statements
+  - short circuit statements
 
 TODO return codes
+
+### if statements
+
+The first condition is the `if` statement. The if statement takes a command, and
+runs it. If the command returns 0, the condition is considered true. For
+instance, `/bin/true` is a command whose only purpose is to return an exit
+status of zero.
 
     #!/bin/bash
     if /bin/true
@@ -187,13 +200,73 @@ TODO return codes
       echo "True is no longer true, I'm going to sit in a corner and cry."
     fi
 
+Here's a (slightly) less contrived example.
+
+    #!/bin/bash
+    # Woo pulp fiction!
+
+    echo "ENGLISH MISTER FLUFFY, DO YOU SPEAK IT?"
+
+    read answer
+
+    if test "$answer" = "yes"
+    then
+        echo "WHAT DOES MARCELLUS WALLACE LOOK LIKE?"
+    elif test "$answer" = "no"
+    then
+        echo "YO HABLA ESPANOL?"
+    else
+        echo "Wait, wait. What?"
+    fi
+
+{::comment}
 TODO comparisons
+{:/comment}
 
-TODO case statements
+### short circuit operators
 
-There are a series of what are known "short circuit operators"
+There are a series of what are known "short circuit operators", that are
+equivalent to short if statements.
+
+    # If this condition is true, run the following command
+    /bin/true && echo "Reality still functioning!"
+    # If this condition os *false*, run the following command
+    /bin/true || echo "True is no longer true, I'm going to sit in a corner and cry."
 
 TODO short circuit operators
+
+- - -
+
+### case statements
+
+{::comment}
+TODO case statements
+{:/comment}
+
+Case statements are effectively a series of `if []; then ...; elif []; then ...; fi`
+
+    case `uname` in
+    Linux)
+        echo "Yay, not terrible"
+        ;;
+    FreeBSD)
+        echo "Yay, still not terrible"
+        ;;
+    Darwin)
+        echo "Egh, could be worse"
+        ;;
+    Solaris)
+        echo "...there's ZFS at least"
+        ;;
+    AIX)
+        echo "OH GOD WHYYYYYY"
+        ;;
+    *)
+        echo "What kind of crazy system are you running?"
+        ;;
+    esac
+
+- - -
 
 Loops, or doing the same thing really really fast
 -------------------------------------------------
