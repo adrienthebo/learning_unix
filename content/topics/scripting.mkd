@@ -42,11 +42,13 @@ On top of the commands that you actually need to do the work in your script, you
 need a few more commands to make the script itself work. Check out the man pages
 on these commands. Go do so now. I'll wait.
 
-  - echo
-  - test
-    - notice that '[' is an alias of test. This is important.
+  - **echo**
+  - **read** (If you can't find the man page for this command, see [this page][man_read]
+  - **seq**
+  - **test**
+    - notice that '**[**' is an alias of test. This is important.
     - This is also a little mind blowing.
-  - read (If you can't find the man page for this command, see [this page][man_read]
+
 
 [man_read]: http://ss64.com/bash/read.html "Bash syntax: read"
 
