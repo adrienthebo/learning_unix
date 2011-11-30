@@ -171,8 +171,8 @@ TODO string concatenation
 TODO parameter expansion
 {:/comment}
 
-Flow Control, i.e. Making Decisions
------------------------------------
+Flow Control and Making Decisions
+---------------------------------
 
 One of the things you're going to have to do in more advanced scripts is make
 decisions in your code. If you do the same thing every single time, that's a
@@ -182,8 +182,8 @@ The way scripts make decision is based on conditionals. There are three main
 types of conditionals:
 
   - if statements
-  - case statements
   - short circuit statements
+  - case statements
 
 TODO return codes
 
@@ -193,6 +193,10 @@ The first condition is the `if` statement. The if statement takes a command, and
 runs it. If the command returns 0, the condition is considered true. For
 instance, `/bin/true` is a command whose only purpose is to return an exit
 status of zero.
+
+{::comment}
+TODO exit status vs stdout
+{:/comment}
 
     #!/bin/bash
     if /bin/true
