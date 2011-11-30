@@ -330,9 +330,10 @@ TODO loop over files
 We can also use the shell to do expansion of files
 
     #!/bin/bash
-    for file in ~
+    # This is a cheap version of ls
+    for file in *
     do
-      echo "$file is a file in my home directory."
+      echo "$file is a file in the current directory."
     done
 
 - - -
@@ -344,11 +345,15 @@ true. It's effectively a repetitive if statement.
     #!/bin/bash
     # If this isn't clear, put this in a file and run it.
     another_counter=""
-    while [ "$another_counter" -ne "aaaa" ];
+    while [ "$another_counter" != "aaaa" ];
     do
       echo "My other counter is $another_counter"
       another_counter="${another_counter}a"
     end
+
+{::comment}
+This example sucks. Use example of a menu loop?
+{:/comment}
 
 TODO explain looping
 
