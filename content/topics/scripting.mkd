@@ -364,6 +364,18 @@ Functions
 
 TODO
 
+{::comment}
+In Practice
+-----------
+
+Write bash replacements of commands.
+
+cat - while read line; do echo line; done
+
+ls - something
+
+{:/comment}
+
 Extra Credit
 ------------
 
