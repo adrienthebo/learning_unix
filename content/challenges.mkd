@@ -7,6 +7,8 @@ Challenges
 
 These are some random challenges of varying difficulty. Have fun!
 
+For programming challenges, once you're done see how short you can make your program.
+
 (If you solve a challenge, don't give away the solution to someone that hasn't
 finished it!)
 
@@ -27,6 +29,32 @@ that writes a file to /tmp. It opens it, waits 5 minutes, writes something to
 it, then deletes it. Find the contents of this file.
 
 If you work on this, contact finch first to make sure it's set up.
+
+Brain Fluffy
+------------
+
+Write a script that reads in standard in, and for each character, gets the
+ascii value of that character and prints out that many plusses. After each
+character, print a ">". You can print a newline for the sake of sanity.
+
+For instance, "hello world!" would be this:
+
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    ++++++++++++++++++++++++++++++++>
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
+    +++++++++++++++++++++++++++++++++>
+
+(**hint**: This is for an esoteric language called [brainfuck](http://en.wikipedia.org/wiki/Brainfuck))
+
+**Author**: Basil
 
 Do It Yourself
 --------------
