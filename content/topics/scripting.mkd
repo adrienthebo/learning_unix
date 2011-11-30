@@ -274,8 +274,15 @@ Case statements are effectively a series of `if []; then ...; elif []; then ...;
 
 - - -
 
-Loops, or doing the same thing really really fast
--------------------------------------------------
+Loops, repetition, reiteration, and other synonyms for repetition
+-----------------------------------------------------------------
+
+There are plenty of times that you'll find that you need to do the same thing
+more than once. We can either copy and paste code, which is painful, or we can
+use a loop.
+
+
+For instance, we can loop over the numbers one through five.
 
     #!/bin/bash
     for count in 1 2 3 4 5
@@ -285,10 +292,36 @@ Loops, or doing the same thing really really fast
 
 - - -
 
-TODO loop over files
+We can also use the output of a command for loop commands
+
+    #!/bin/bash
+    for count in `seq 1 5`
+    do
+      echo "I have done this $count time(s)."
+    done
 
 - - -
 
+{::comment}
+TODO loop over files
+{:/comment}
+
+We can also use the shell to do expansion of files
+
+    #!/bin/bash
+    for file in ~
+    do
+      echo "$file is a file in my home directory."
+    done
+
+- - -
+
+We also have the `while` statement. While the `for` statement generally runs
+over a set number of items, the `while` statement will run while a condition is
+true. It's effectively a repetitive if statement.
+
+    #!/bin/bash
+    # If this isn't clear, put this in a file and run it.
     another_counter=""
     while [ "$another_counter" -ne "aaaa" ];
     do
