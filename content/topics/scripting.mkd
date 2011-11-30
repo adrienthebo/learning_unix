@@ -16,7 +16,9 @@ document.
 
  - [Bash Programming - the Linux Documentation Project](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
 
+{::comment}
 TODO more links that don't suck
+{:/comment}
 
 Description
 -----------
@@ -36,17 +38,21 @@ in your environment.
 Commands
 --------
 
-You have more commands to look up before we continue. Go do so now. I'll wait.
+On top of the commands that you actually need to do the work in your script, you
+need a few more commands to make the script itself work. Check out the man pages
+on these commands. Go do so now. I'll wait.
 
   - echo
   - test
     - notice that '[' is an alias of test. This is important.
     - This is also a little mind blowing.
+  - read (If you can't find the man page for this command, see [this page][man_read]
+
+[man_read]: http://ss64.com/bash/read.html "Bash syntax: read"
 
 If you didn't look them up I will eat your face.
 
-Making a file executable
-------------------------
+### An aside - making files executable
 
 In windows, a file is executable depending on the name. For instance, if a file
 was named 'program.exe' you could run it, while if you renamed the file to
@@ -68,6 +74,9 @@ ENTIRE. UNIX. QUOTA.*
 A Basic Example
 ---------------
 
+This is pretty much the most basic script that you'll ever see. When you put
+this into a file and run it, it simply prints out "Hello world"
+
     #!/bin/bash
     echo "Hello world"
 
@@ -80,23 +89,95 @@ by the shebang is effectively 'fed' the script as an argument. Thus, if you
 named the previous script "hello.sh", you could run it by doing `bash hello.sh`
 or `./hello.sh`.
 
+{::comment}
 TODO more on shebang
+{:/comment}
 
 [shebang]: http://en.wikipedia.org/wiki/Shebang\_(Unix) "Wikipedia - Unix Shebang"
 
+Comments
+--------
+
+To make your code more understable, you can embed comments into the code. This
+allows you to make notes about why you're doing things a certain way. Anything
+after a `#` will be ignored.
+
+    #!/bin/bash
+    # This is a comment. Technically, the previous line was a comment too.
+
+    # We're going to print "Hello world" to the screen now
+    echo "Hello world" #< - This starts an end of line comment
+
 Variables
 ---------
+
+A variable is similar to a mathematical variable, as in we effectively store a
+value inside the variable, and then reference the variable to get at the value.
+This allows us to create code that has more dynamic behavior.
+
+This is the most basic example of using a variable: we set a variable, and then
+use it in the `echo` statement.
 
     #!/bin/bash
     myname=finch
     echo "Hello $myname"
 
+{::comment}
 TODO variable assignment
+{:/comment}
 
+- - -
+
+You can also use the `read` command to get input from the user. (You read the
+man page, right?)
+
+    #!/bin/bash
+
+    echo "What's your name?"
+    read your_name
+    echo "Hello $your_name, I have some candy in my van - wait, is that Chris Hansen?"
+
+- - -
+
+Unlike mathematical variables, bash variables can be reassigned as many times as
+you like.
+
+    #!/bin/bash
+    # Woo monty python!
+
+    echo "WHAT is your name?"
+    read var
+    echo "Your name is $var"
+
+    echo "WHAT is your quest?"
+    read var
+    echo "Your quest is $var"
+
+    echo "WHAT is your favorite color?"
+    # Blue! No! Green! No! AAAAAAaaaaaaaahhhhhhh
+    read var
+    echo "Your favorite color is $var"
+
+    # Note that this is a bad example, we're reusing $var when we don't need to.
+    # It's simply an easy way to demonstrate reassignment.
+
+- - -
+
+{::comment}
 TODO difference between a=val and $a=val
+TODO string concatenation
+{:/comment}
 
 Flow Control, i.e. Making Decisions
 -----------------------------------
+
+One of the things you're going to have to do in more advanced scripts is make
+decisions in your code. If you do the same thing every single time, that's a
+fairly boring script, so let's make something more advanced.
+
+The way scripts make decision is based on conditionals.
+
+TODO return codes
 
     #!/bin/bash
     if /bin/true
@@ -106,7 +187,11 @@ Flow Control, i.e. Making Decisions
       echo "True is no longer true, I'm going to sit in a corner and cry."
     fi
 
+TODO comparisons
+
 TODO case statements
+
+There are a series of what are known "short circuit operators"
 
 TODO short circuit operators
 
@@ -118,6 +203,10 @@ Loops, or doing the same thing really really fast
     do
       echo "I have done this $count time(s)."
     done
+
+- - -
+
+TODO loop over files
 
 - - -
 
@@ -176,6 +265,4 @@ TODO specifics of runaway script
 This is all far too simple for me. I require monumental tasks.
 --------------------------------------------------------------
 
-If you're reading these and haven't found anything challenging, PM me. I have
-a particularly evil challenge for those who are interested.
-
+See the [challenges page](../../challenges/).
