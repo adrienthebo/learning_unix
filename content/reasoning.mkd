@@ -25,7 +25,7 @@ to begin to list all the reasons why you would want to learn this.
 
  * Unix is everywhere. EVERYWHERE. Many systems are powered by Unix that you
    wouldn't expect, like your home router, your Android phone, and some of your
-   more advanced home appliances. OSX is Unix at its core. And unix pretty much
+   more advanced home appliances. OSX is Unix at its core. And Unix pretty much
    runs the web these days; it is used to host the majority of websites. Unix
    also forms the backbone of the Internet; it's in core network infrastructure.
    Unix also pretty much exclusively powers Google and Amazon, to name two of
@@ -36,9 +36,9 @@ to begin to list all the reasons why you would want to learn this.
    rapidly build up a series of simple commands to do extremely complex things
    nobody else envisioned.
  * Unix is stable. My own personal server has been up for 117 days. One of our
-   unix servers has been up for 779 days. If you need extreme uptime,
-   reliablility, or durability, you run unix. Linux runs all of the top 10
-   supercomputers, and out of the top 500, A unix variant runs on nearly all of
+   Unix servers has been up for 779 days. If you need extreme uptime,
+   reliability, or durability, you run Unix. Linux runs all of the top 10
+   supercomputers, and out of the top 500, A Unix variant runs on nearly all of
    them.
 
 Why Everything is So Hard!
@@ -62,7 +62,7 @@ vocabulary and syntax you need to learn, you'll be fine.
 Who This is Catered To
 ----------------------
 
-This guide is targetted at people that have some Windows experience but don't
+This guide is targeted at people that have some Windows experience but don't
 have a lot of time using Unix, or haven't spent a lot of time in the shell. I
 intend to throw in a lot of interesting things so that even if you have some
 experience, you should be able to work on your challenges to get a bit more
@@ -79,4 +79,4 @@ There are many other types of Unix like systems out there, but if you're lucky
 you'll never encounter them. No, seriously. The Unix flavors that are real
 Unixes, they're scary. While I won't be addressing all the different types of
 Unix out there, hopefully I'll be explaining the concepts that you'll see on
-the more modern and common unix variants.
+the more modern and common Unix variants.
