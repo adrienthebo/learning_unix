@@ -5,19 +5,36 @@ title: Playing With the Shell
 Playing With the Shell
 ======================
 
-Topics
-------
+How Commands Get Executed
+-------------------------
 
- * how commands get executed
- * Job control
-  * suspend
-  * bg
-  * fg
-  * jobs
+Shell Builtins
+--------------
+
+Job Control
+-----------
+
+  * Suspending
+  * Foregrounding and Backgrounding
   * &
   * disown
- * variables
- * the prompt
- * tab completion
- * backquotes
- * shell builtins
+
+  * Comparison to screen
+
+Information at a Glance
+-----------------------
+
+AKA the prompt
+
+Work More, Type Less
+--------------------
+
+[link](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_04.html)
+
+  * Parameter Expansion
+  * Variable Expansion
+  * Command Substitution
+
+  * Tab Completion
+
+  * [history expansion](http://www.acm.uiuc.edu/workshops/zsh/history/hist_expn.html)
