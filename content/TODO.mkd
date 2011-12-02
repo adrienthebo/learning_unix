@@ -9,9 +9,9 @@ Incomplete Topics
 -----------------
 
 
- 1. [Playing with the shell](topics/intro_shell/) (10%)
+ 1. [Playing with the shell](../topics/understanding_shells/) (10%)
 
- 1. [Processes, or lack thereof.](topics/processes/) (10%)
+ 1. [Processes, or lack thereof.](../topics/processes/) (10%)
 
 Speculative topics
 ------------------

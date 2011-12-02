@@ -1,9 +1,9 @@
 ---
-title: Playing With the Shell
+title: Understanding the Shell
 ---
 
-Playing With the Shell
-======================
+Understanding the Shell
+=======================
 
 How Commands Get Executed
 -------------------------
