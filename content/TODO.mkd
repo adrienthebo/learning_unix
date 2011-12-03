@@ -9,9 +9,9 @@ Incomplete Topics
 -----------------
 
 
- 1. [Playing with the shell](../topics/understanding_shells/) (10%)
-
- 1. [Processes, or lack thereof.](../topics/processes/) (10%)
+ 1. [Playing with the shell](../topics/understanding_shells/)
+ 1. [Processes, or lack thereof.](../topics/processes/)
+ 1. [Terminals and TTYs](../topics/terminals_and_ttys/)
 
 Speculative topics
 ------------------
@@ -19,7 +19,6 @@ Speculative topics
  1. Permissions
  1. Users and groups
  1. Filesystems
- 1. Playing with ttys
  1. Regular expressions
 
 If there's something that I haven't written about that isn't listed here and
