@@ -353,6 +353,8 @@ true. It's effectively a repetitive if statement.
 
 {::comment}
 This example sucks. Use example of a menu loop?
+
+Alternately, repeated prompt?
 {:/comment}
 
 TODO explain looping
@@ -363,6 +365,12 @@ Functions
 ---------
 
 TODO
+
+{::comment}
+
+Example of a function that creates a reusable repeated prompt?
+
+{:/comment}
 
 {::comment}
 In Practice
