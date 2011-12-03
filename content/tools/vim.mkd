@@ -52,3 +52,4 @@ References
 ----------
 
  * [The vim learning curve is a myth](http://robots.thoughtbot.com/post/13164810557/the-vim-learning-curve-is-a-myth)
+ * [Prescription vim](http://rxvim.tumblr.com/) Read one page of the vim help pages a week, and call me when you've become a vim god.
