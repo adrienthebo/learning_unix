@@ -29,6 +29,7 @@ Tools of the trade
  - [Git](tools/git/): Better living through version control and git.
  - [Ruby](tools/ruby/): Ruby - because programming should be fun.
  - [GPG](tools/gpg/): Gnu Privacy Guard - just because you're paranoid doesn't mean they're not out to get you.
+ - [Keychain](tools/keychain/): SSH and GPG key agents without the hassle
  - Eventually: ssh
  - Eventually: procmail
 
