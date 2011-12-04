@@ -1,5 +1,12 @@
+---
+title: Anatomy of a Command
+---
+
 Anatomy of a Command
 ====================
+
+Introduction
+------------
 
 We've been talking of running commands and passing arguments and whatnot, but
 we haven't really explained what exactly we're doing. To get a better hold on
