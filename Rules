@@ -23,7 +23,10 @@ compile '*' do
   else
     filter :erb
     filter :kramdown
-    layout 'default'
+
+    # If the item has a layout attribute, use that for the layout, else
+    # fall back to the default layout.
+    layout (item.attributes[:layout] || 'default')
   end
 end
 
