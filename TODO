@@ -1,5 +1,29 @@
 TODO
 ====
 
- * Change the unix references to linux.
- * Mention the common unices and explain why I'm doing linux.
+  * html tidy
+    * https://github.com/aadlani/nanoc-toolbox/blob/master/lib/nanoc/toolbox/filters/html_tidy.rb
+    * I don't know.
+
+  * Remove cat specific code references
+  * Add colorized syntax
+    * http://nanoc.stoneship.org/docs/api/3.2/Nanoc3/Filters/ColorizeSyntax.html
+    * combine with block level attributes in kramdown
+
+  * table of contents/sidebar
+    * centralize in document, or some shit like that
+    * customize routing
+    * include content in places and shit.
+
+  * fix relative urls
+    * http://nanoc.stoneship.org/docs/api/3.2/Nanoc3/Filters/RelativizePaths.html
+    * blogging helper url_for shit
+    * fix the base_url shit
+    
+  * demo VM?
+    * This is fucking cracked out but would be all sorts of goddamn neat.
+    * host in S3?
+    * wtf
+
+  * linode instance to host this shit?
+    * wtf
