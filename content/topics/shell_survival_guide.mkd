@@ -1,5 +1,7 @@
-Shell Survival Guide
-====================
+---
+title: Shell Survival Guide
+layout: post
+---
 
 Now that we've covered how to get around the filesystem a bit and how commands
 actually work, let's get a bit more hands on. You'll need a separate set of

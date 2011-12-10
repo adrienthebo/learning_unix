@@ -1,9 +1,7 @@
 ---
 title: Surviving and Navigating the Filesystem
+layout: post
 ---
-
-Surviving and Navigating the Filesystem
-=======================================
 
 Introduction
 ------------

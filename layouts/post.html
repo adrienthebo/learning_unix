@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    	<meta charset="utf-8">
+    	<title>Learning Unix - <%= @item[:title] %></title>
+    	<link rel="stylesheet" type="text/css" href="<%= @config[:baseurl] %>/style.css" media="screen" />
+    	<link rel="shortcut icon" href="<%= @config[:baseurl] %>/favicon.ico" type="image/x-icon" />
+    	<!-- pretty google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Nova+Flat' rel='stylesheet' type='text/css'>
+	<meta name="generator" content="nanoc 3.2.3">
+  </head>
+  <body>
+ 
+      <div id="sidebar"> <!-- start sidebar -->
+        <div id="navlist">
+		<%= render 'sidebar' %>
+	</div>
+      </div> <!-- end sidebar -->
+
+
+      <div id="content"> <!-- start content -->
+		<div class="padding">
+
+     	<div id="header"> 
+               <big><a href="<%= config[:baseurl] %>/"><h1>Learning Unix</h1></a></big>
+      	</div> 
+                <h1><%= @item[:title] %></h1>
+		<%= yield %>
+	</div>
+      </div> <!-- end content -->
+      
+      <div id="footer"> <!-- start footer -->
+        <p>Last generated at <%= Time.now %></p>
+      </div>  <!-- end footer -->
+
+    
+  </body>
+</html>

@@ -1,9 +1,7 @@
 ---
 title: Anatomy of a Command
+layout: post
 ---
-
-Anatomy of a Command
-====================
 
 Introduction
 ------------

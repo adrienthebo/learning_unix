@@ -1,9 +1,7 @@
 ---
 title: Bash Scripting
+layout: post
 ---
-
-Bash Scripting
-==============
 
 Introduction
 ------------

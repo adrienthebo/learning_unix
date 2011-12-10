@@ -1,9 +1,7 @@
 ---
 title: Understanding the Shell
+layout: post
 ---
-
-Understanding the Shell
-=======================
 
 How Commands Get Executed
 -------------------------
