@@ -43,8 +43,6 @@ There are going to be two styles of code blocks. One is going to be for
 code examples, like ruby, bash, or C. These should just look like code.
 Hopefully I'll add syntax highlighting to make these more visible.
 
-TODO add syntax highlighting to CSS
-
     #!/bin/bash
 
     echo "This would be an example of a code block, or code snippet."

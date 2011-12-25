@@ -378,8 +378,10 @@ Well, this got page got a lot longer than I originally intended.
 Extra Credit
 ------------
 
+{::comment}
 TODO Argument parsing in C
 
 TODO Argument parsing in ruby?
 
 TODO Argument parsing in bash?
+{:/comment}
