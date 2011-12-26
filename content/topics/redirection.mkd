@@ -1,5 +1,6 @@
 ---
 title: Redirection
+description: Covers redirection and pipes, assembling commands
 layout: post
 ---
 

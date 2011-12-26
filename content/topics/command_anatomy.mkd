@@ -1,5 +1,6 @@
 ---
 title: Anatomy of a Command
+description: Breaks down how commands can be used and how man pages describe commands
 layout: post
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Bash Scripting
+description: A brief introduction to automating work with scripts.
 layout: post
 ---
 
