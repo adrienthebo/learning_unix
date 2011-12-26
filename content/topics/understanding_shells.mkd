@@ -41,7 +41,21 @@ Shell Builtins
 You may have noticed that there are some commands like `cd`, `alias`, or
 `export` that are referred to as 'builtins'. Due to how the model of processes
 and how things are isolated in unix, there are a variety of operations that
-cannot be separate commands, so they have to be built into the shell.
+cannot be separate commands, so they have to be built into the shell. Because
+these commands are built into the shell, they don't follow the previously given
+model for execution. Instead, when you run one of those commands the shell
+itself simply executes the instructions itself.
+
+For instance, one process can't change the current directory of another process,
+so `cd` can't be an independent program. When you run `cd`, it invokes some
+internal behavior in the shell, which makes it change the directory itself. The
+same thing goes for environment variables - you can't change the environment
+variables in a process from another process, so you can use the `export` builtin
+to have a shell change a variable for itself.
+
+For a full list of builtins, you can do `man builtin` but be warned - this is a
+very long and somewhat unreadable man page of *all* the shell builtins. You
+would be best to look up information on the internet regarding these commands.
 
 Job Control
 -----------
