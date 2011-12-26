@@ -3,6 +3,35 @@ title: Understanding the Shell
 layout: post
 ---
 
+This far we've been treating the shell as a bit of a black box. You type things
+in, you get output, and things are linked together as necessary to make the
+system run. Now let's dig into the guts of what's happening to see how we go
+from typing in text to getting actual work done.
+
+Making sense from text
+----------------------
+
+To get started, we need to get the input typed in from the user and figure out
+what exactly is needed. When you type in a line of input, your shell receives
+it, and has to [parse][wiki_parse] the string into directives.
+
+For instance, if you run the command `grep bee /usr/share/dict/words | less`,
+the shell has to determine what you want. In this instance, it needs to
+determine that you want to run two commands, `grep` and `less`, and that the
+standard output of grep needs to be directed to the standard input of less.
+
+In general, before anything can happen, the shell needs handle all the special
+things we've been doing, like chaining commands with `|`, handling redirections
+like `<` and `>`, replacing variables like `$var` with the contents of those
+variables, and so on.
+
+While all shells may have different methods of parsing, a general overview of
+the [bash parser][parser] can give you a more exact idea of how shells exactly
+do parsing.
+
+[wiki_parse]: http://en.wikipedia.org/wiki/Parsing "Wikipedia: Parsing"
+[parser]: http://mywiki.wooledge.org/BashParser "The Bash Parser"
+
 How Commands Get Executed
 -------------------------
 
