@@ -130,3 +130,11 @@ Work More, Type Less
   * Tab Completion
 
   * [history expansion](http://www.acm.uiuc.edu/workshops/zsh/history/hist_expn.html)
+
+{::comment}
+
+TODO
+
+Configuring the shell
+---------------------
+{:/comment}
