@@ -8,11 +8,7 @@
 			</ul>
 		<li>&nbsp;Topics</li>
 			<ul>
-				<li><a href="<%= @config[:baseurl] %>/topics/navigation/">1. Navigating the Filesystem</a></li>
-				<li><a href="<%= @config[:baseurl] %>/topics/command_anatomy/">2. Anatomy of a Command</a></li>
-				<li><a href="<%= @config[:baseurl] %>/topics/redirection/">3. Redirection</a></li>
-				<li><a href="<%= @config[:baseurl] %>/topics/shell_survival_guide/">4. Shell Survival Guide</a></li>
-				<li><a href="<%= @config[:baseurl] %>/topics/scripting/">5. Scripting</a></li>
+                                <%= build_nav("/topic", :format => "%s. %s", :fields => [:order, :title]) %>
 			</ul>
 		<li>&nbsp;Tools of the Trade<li>
 			<ul>
