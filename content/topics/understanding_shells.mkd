@@ -25,6 +25,11 @@ things we've been doing, like chaining commands with `|`, handling redirections
 like `<` and `>`, replacing variables like `$var` with the contents of those
 variables, and so on.
 
+Once this is done, the user's input has been broken up into information the
+shell can use, such as the list of programs that need to be run and any sort of
+modifications that need to be made, such as redirecting the output and joining
+commands with pipes.
+
 While all shells may have different methods of parsing, a general overview of
 the [bash parser][parser] can give you a more exact idea of how shells exactly
 do parsing.
