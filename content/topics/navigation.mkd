@@ -1,6 +1,7 @@
 ---
 title: Surviving and Navigating the Filesystem
 description: An introduction to the shell, filesystems and navigating, running commands, and getting around.
+order: 1
 layout: post
 ---
 
