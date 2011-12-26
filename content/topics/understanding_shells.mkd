@@ -1,5 +1,6 @@
 ---
 title: Understanding the Shell
+description: How shells actually work, and how to use them effectively
 layout: post
 ---
 
