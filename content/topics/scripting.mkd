@@ -28,7 +28,7 @@ Description
 
 Nobody likes performing repetitive tasks, and so if we have a series of commands
 we want to run repeatedly then we can put them into a script. A script is a
-file that contains a servies of commands and shell functions that can be
+file that contains a series of commands and shell functions that can be
 
 With all of these sections, use `nano`, `vim`, or whatever text editor you would
 prefer to make these examples. If you're not sure, use `nano`.
