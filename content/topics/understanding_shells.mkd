@@ -38,6 +38,11 @@ How Commands Get Executed
 Shell Builtins
 --------------
 
+You may have noticed that there are some commands like `cd`, `alias`, or
+`export` that are referred to as 'builtins'. Due to how the model of processes
+and how things are isolated in unix, there are a variety of operations that
+cannot be separate commands, so they have to be built into the shell.
+
 Job Control
 -----------
 
