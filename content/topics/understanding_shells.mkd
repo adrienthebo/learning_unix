@@ -40,6 +40,47 @@ do parsing.
 How Commands Get Executed
 -------------------------
 
+Now that we have the user's input broken into pieces we can understand, we need
+to start executing. The way a program starts another process is a two step
+process. The first thing a program needs to do is [fork][fork], or create a copy
+of itself. This isolates your actual shell from the process that it's about to
+launch. The second step is where the newly created shell [execs][exec] another
+process. That is, the shell effectively *becomes* the new process by replacing
+itself with the program to be executed.
+
+[fork]: http://linux.die.net/man/3/fork "man 3 fork"
+[exec]: http://linux.die.net/man/3/exec "man 3 exec"
+
+The flow of execution looks like this:
+
+        +-------+
+        | shell |
+        +-------+
+            |
+            v
+        +------+
+        | fork |--------+
+        +------+        |
+            |           |
+            v           v
+        +-------+ +------------+
+        | shell | | new shell! |
+        +-------+ +------------+
+            |           |
+            |           v
+            |       +------+
+            |       | exec |
+            |       +------+
+            |           |
+            v           v
+        +-------+ +--------------+
+        | shell | | new process! |
+        +-------+ +--------------+
+
+Any program can launch another program in the method we've just covered.
+However, shells largely exist to assist in launching other programs so this has
+to feature prominently in this discussion.
+
 Shell Builtins
 --------------
 
