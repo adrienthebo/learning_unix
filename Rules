@@ -23,6 +23,7 @@ compile '*' do
   else
     filter :erb
     filter :kramdown
+    filter :html_tidy
 
     # If the item has a layout attribute, use that for the layout, else
     # fall back to the default layout.
