@@ -26,19 +26,6 @@ Tools of the trade
 ------------------
 
  - [Vim](tools/vim/): Vim and vimtutor. Learn you some vim!
- - [Git](tools/git/): Better living through version control and git.
- - [Ruby](tools/ruby/): Ruby - because programming should be fun.
- - [GPG](tools/gpg/): Gnu Privacy Guard - just because you're paranoid doesn't mean they're not out to get you.
- - [Keychain](tools/keychain/): SSH and GPG key agents without the hassle
- - Eventually: ssh
- - Eventually: procmail
-
-etc
----
-
- * [The Grab Bag](grabbag/) - Curious and Wonderful Topics
- * [Challenges](challenges/) - For the bold, intrepid, and possibly masochistic.
- * [TODO](TODO/) - Pages and projects I haven't started but want to list
 
 - - -
 
@@ -48,8 +35,6 @@ Authors
  * Finch
  * Nameless
  * Basil - site design, CSS, and rockin favicon
-
- * [Contributing](contributing/) - Wanted: your brains! (And assistance)
 
 Thanks to all the lovely folks that have taken the time to read this and
 provide feedback.
