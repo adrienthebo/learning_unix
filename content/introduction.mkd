@@ -8,27 +8,12 @@ Introduction
 These are meant to be a series of exercises to help you explore our environment,
 try out new things, and get a taste of things on the Unix side.
 
-At any point if you are uncertain, use google, ask a fellow zombie or a more
-senior cat, or pm finch for help. The goal of this is to learn by whatever
-method that works for you.
+At any point if you are uncertain, use google or ask a friend for help.  The
+goal of this is to learn by whatever method that works for you.
 
 If you stumble upon a concept that doesn't make sense or have not heard of, it's
 fine to move past it. There's a lot to learn so don't let small details slow you
 down. Try to absorb as much as you can.
-
-Feedback
---------
-
-I am actively interested in what you're doing with this! If there's a second
-that says 'send details to me,' this means I actually do want to know what
-you've done and what you've figured out.  If you would be so kind, write up the
-things you find or work through in this and then send me a copy when you're
-done.
-
-### Contact
-
-  * irc: irc.cat.pdx.edu handle: finch (preferred)
-  * email: finch@cat.pdx.edu (this is checked very infrequently)
 
 Conventions
 -----------
